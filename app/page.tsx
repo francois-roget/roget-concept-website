@@ -15,6 +15,8 @@ export default function Home() {
         />
       </div>
       Under construction
+      <br />
+      Contact: francois (a) roget-concept.be
     </main>
   );
 }
