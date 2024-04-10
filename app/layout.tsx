@@ -1,22 +1,39 @@
-import type { Metadata } from "next";
-import { Inter } from "next/font/google";
-import "./globals.css";
+import "@mantine/core/styles.css";
+import React from "react";
+import Image from "next/image";
+import { MantineProvider, ColorSchemeScript, Container } from "@mantine/core";
+import { theme } from "../theme";
 
-const inter = Inter({ subsets: ["latin"] });
-
-export const metadata: Metadata = {
-  title: "Roget Concept",
-  description: "Your IT Development Partner",
+export const metadata = {
+  title: "Mantine Next.js template",
+  description: "I am using Mantine with Next.js!",
 };
 
-export default function RootLayout({
-  children,
-}: Readonly<{
-  children: React.ReactNode;
-}>) {
+export default function RootLayout({ children }: { children: any }) {
   return (
     <html lang="en">
-      <body className={inter.className}>{children}</body>
+      <head>
+        <ColorSchemeScript />
+        <link rel="shortcut icon" href="/favicon.svg" />
+        <meta
+          name="viewport"
+          content="minimum-scale=1, initial-scale=1, width=device-width, user-scalable=no"
+        />
+      </head>
+      <body>
+        <MantineProvider theme={theme}>
+          <Container>
+            <Image
+              src="/roget-concept-logo-white.JPG"
+              alt="Roget Concept Logo"
+              width={250}
+              height={250}
+            />
+            <h1>Roget Concept</h1>
+            {children}
+          </Container>
+        </MantineProvider>
+      </body>
     </html>
   );
 }
