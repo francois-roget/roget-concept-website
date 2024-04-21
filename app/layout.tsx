@@ -3,6 +3,7 @@ import React from "react";
 import Image from "next/image";
 import { MantineProvider, ColorSchemeScript, Container } from "@mantine/core";
 import { theme } from "../theme";
+import Header from '../Components/Header';
 
 export const metadata = {
   title: "Mantine Next.js template",
@@ -23,13 +24,7 @@ export default function RootLayout({ children }: { children: any }) {
       <body>
         <MantineProvider theme={theme}>
           <Container>
-            <Image
-              src="/roget-concept-logo-white.JPG"
-              alt="Roget Concept Logo"
-              width={250}
-              height={250}
-            />
-            <h1>Roget Concept</h1>
+            <Header/>
             {children}
           </Container>
         </MantineProvider>
