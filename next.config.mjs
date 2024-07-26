@@ -1,8 +1,6 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
 	distDir: './dist',
-	optimizeCss: false,
-	enableBabelRuntime: true,
 	images: {
 		remotePatterns: [
 			{
