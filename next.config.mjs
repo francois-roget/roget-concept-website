@@ -4,6 +4,7 @@ const nextConfig = {
 	optimizeCss: false,
 	enableBabelRuntime: true,
 	images: {
+		unoptimized: true,
 		remotePatterns: [
 			{
 				protocol: 'https',
