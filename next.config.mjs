@@ -1,7 +1,7 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
 	basePath: '', output: 'export',
-	distDir: './dist',
+	distDir: './docs',
 	images: {
 		unoptimized: true,
 		remotePatterns: [
