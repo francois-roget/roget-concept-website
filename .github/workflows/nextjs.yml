@@ -75,6 +75,8 @@ jobs:
         run: npm ci
       - name: Build with Next.js
         run: npm run build
+      - name: Check output
+        run: ls -alh ./dist/_next/static/css
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
