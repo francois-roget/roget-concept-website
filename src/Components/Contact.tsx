@@ -4,7 +4,7 @@ import Section from '@/Components/Section';
 export const ContactButton = () => (
 	<a
 		href="mailto:francois@roget-concept.be"
-		className="text-white bg-primary font-medium text-xl rounded-lg text-sm px-5 py-2.5">
+		className="text-white bg-secondary font-medium text-xl rounded-lg px-5 py-2.5">
 		Contact me
 	</a>
 );

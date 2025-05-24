@@ -5,12 +5,11 @@ import { SiTypescript } from 'react-icons/si';
 import { FaReact, FaPhp } from 'react-icons/fa';
 
 const Technologies: React.FC = () => (
-	<div className="flex justify-between mt-40 text-5xl text-primary">
+	<div className="flex justify-between mt-20 text-5xl text-secondaryLight">
 		<FaReact />
 		<SiTypescript />
 		<FaJava />
 		<FaPhp />
-		<IoLogoJavascript />
 	</div>
 );
 
