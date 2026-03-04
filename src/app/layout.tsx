@@ -10,8 +10,32 @@ const redHatDisplay = localFont({
 });
 
 export const metadata: Metadata = {
-	title: 'Roget Concept',
-	description: 'Your partner in full stack development',
+	title: 'Roget Concept — Full Stack Development & Technical Training',
+	description:
+		'François Roget, Senior Full Stack Developer and Architect with 20+ years of experience. IT Consultancy, React/TypeScript expertise, and technical training.',
+	keywords: [
+		'Full Stack Developer',
+		'React',
+		'TypeScript',
+		'IT Consultancy',
+		'Technical Training',
+		'Software Architect',
+	],
+	openGraph: {
+		title: 'Roget Concept — Full Stack Development & Technical Training',
+		description:
+			'François Roget, Senior Full Stack Developer and Architect with 20+ years of experience.',
+		url: 'https://roget-concept.be',
+		siteName: 'Roget Concept',
+		locale: 'en_US',
+		type: 'website',
+	},
+	twitter: {
+		card: 'summary_large_image',
+		title: 'Roget Concept — Full Stack Development & Technical Training',
+		description:
+			'François Roget, Senior Full Stack Developer and Architect with 20+ years of experience.',
+	},
 };
 
 export default function RootLayout({
