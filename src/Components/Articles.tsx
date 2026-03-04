@@ -14,7 +14,8 @@ const Article: React.FC<ArticleType> = ({ title, url, thumbnailUrl, tags }) => {
 		<a
 			className="flex flex-col w-full bg-white border border-rcGrey rounded overflow-hidden shadow-md my-5 text-primary"
 			href={url}
-			target="_blank">
+			target="_blank"
+			rel="noopener noreferrer">
 			<div className="relative w-full h-36">
 				<Image
 					src={thumbnailUrl}

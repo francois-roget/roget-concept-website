@@ -40,9 +40,10 @@ const Hero = () => {
 				<Image
 					width={500}
 					height={500}
-					alt="team work"
+					alt="François Roget, Senior Full Stack Developer and Architect"
 					src="/fro-pro.JPG"
 					className="h-[36rem] w-full rounded-xl object-cover"
+				priority
 				/>
 			</div>
 		</header>
