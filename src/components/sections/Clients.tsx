@@ -15,14 +15,14 @@ export default function Clients() {
 					{companies.map((company) => (
 						<div
 							key={company.name}
-							className="bg-white flex items-center justify-center px-8 py-9 hover:bg-rcGreyLight transition-colors duration-300"
+							className="group bg-white flex items-center justify-center px-8 py-9 hover:bg-rcGreyLight transition-colors duration-300"
 						>
 							<Image
 								src={company.logo}
 								alt={company.name}
 								width={120}
 								height={60}
-								className="grayscale opacity-50 hover:grayscale-0 hover:opacity-100 transition-all duration-300 object-contain max-h-[60px]"
+								className="grayscale opacity-50 group-hover:grayscale-0 group-hover:opacity-100 transition-all duration-300 object-contain max-h-[60px]"
 							/>
 						</div>
 					))}
