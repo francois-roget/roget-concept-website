@@ -1,11 +1,14 @@
+'use client';
+
 import Image from 'next/image';
 import BrandBackground from '@/components/ui/BrandBackground';
 import ArrowIcon from '@/components/ui/ArrowIcon';
+import { useTranslation } from '@/i18n/LanguageProvider';
 import { techStack } from '@/data/site-data';
 
-const roles = ['Developer', 'Tech Lead', 'Architect', 'Teacher', 'Writer'];
-
 export default function Hero() {
+	const { t } = useTranslation();
+
 	return (
 		<section className="relative min-h-screen bg-gradient-to-br from-primaryDark via-primary to-[#2a2a88] flex items-center overflow-hidden">
 			<BrandBackground showMark />
@@ -15,10 +18,10 @@ export default function Hero() {
 					<div>
 						<p className="inline-flex items-center gap-2 text-[11px] font-semibold tracking-[0.2em] uppercase text-secondaryLight mb-7">
 							<span className="w-7 h-0.5 bg-secondaryLight" />
-							Available for new missions
+							{t.hero.eyebrow}
 						</p>
 						<p className="text-white/70 text-lg lg:text-xl mb-1">
-							Hello, I&apos;m
+							{t.hero.hello}
 						</p>
 						<h1 className="text-5xl lg:text-[88px] font-black text-white leading-[0.95] tracking-tight mb-5">
 							Fran
@@ -28,7 +31,7 @@ export default function Hero() {
 						</h1>
 
 						<div className="flex flex-wrap gap-2 mb-8">
-							{roles.map((role) => (
+							{t.hero.roles.map((role) => (
 								<span
 									key={role}
 									className="text-xs font-semibold tracking-wider border border-secondaryLight/35 text-secondaryLight rounded-full px-3.5 py-1 bg-secondaryLight/[0.06]"
@@ -39,17 +42,14 @@ export default function Hero() {
 						</div>
 
 						<p className="text-base text-white/60 leading-relaxed max-w-lg mb-2">
-							A senior frontend developer, architect, and technical mentor
-							with{' '}
+							{t.hero.bio}
 							<strong className="text-white/85 font-semibold">
-								20+ years of experience
+								{t.hero.bioHighlight}
 							</strong>
-							. I help teams deliver robust, maintainable, and scalable web
-							applications.
+							{t.hero.bioContinue}
 						</p>
 						<p className="text-sm text-white/40 leading-relaxed max-w-lg mb-10">
-							Pragmatic, no-nonsense solutions that move your projects
-							forward.
+							{t.hero.bioSub}
 						</p>
 
 						<div className="flex flex-wrap items-center gap-5 mb-12">
@@ -57,20 +57,20 @@ export default function Hero() {
 								href="#contact"
 								className="inline-flex items-center gap-2 bg-gradient-to-r from-secondary to-secondaryLight text-white font-bold text-sm rounded-md px-8 py-3.5 shadow-lg shadow-secondary/30 hover:shadow-secondary/50 hover:-translate-y-0.5 transition-all tracking-[0.04em]"
 							>
-								Let&apos;s work together
+								{t.hero.cta}
 								<ArrowIcon />
 							</a>
 							<a
 								href="#services"
 								className="inline-flex items-center gap-2 border border-white/20 text-white/75 font-semibold text-sm rounded-md px-7 py-3.5 hover:border-secondaryLight hover:text-white transition-all"
 							>
-								Discover my services
+								{t.hero.ctaSecondary}
 							</a>
 						</div>
 
 						<div className="flex items-center gap-2.5 flex-wrap">
 							<span className="text-[11px] font-semibold tracking-[0.12em] uppercase text-white/30 mr-1">
-								Stack
+								{t.hero.stack}
 							</span>
 							{techStack.map((tech) => (
 								<span
@@ -98,23 +98,20 @@ export default function Hero() {
 									priority
 								/>
 							</div>
-							{/* Corner accent */}
 							<div className="absolute -top-4 -right-4 w-28 h-28 border-[3px] border-secondaryLight/50 rounded-2xl pointer-events-none" />
 							<div className="absolute -bottom-4 -left-4 w-20 h-20 bg-gradient-to-br from-secondary to-secondaryLight rounded-xl opacity-15 pointer-events-none" />
-							{/* Experience badge */}
 							<div className="absolute bottom-10 -left-8 bg-white rounded-xl px-5 py-4 shadow-2xl">
 								<div className="text-3xl font-black text-primary leading-none">
 									20
 									<span className="text-secondary">+</span>
 								</div>
 								<div className="text-[11px] font-medium text-rcGrey mt-0.5">
-									Years of experience
+									{t.hero.yearsLabel}
 								</div>
 							</div>
-							{/* Availability indicator */}
 							<div className="absolute top-7 -right-5 bg-primaryDark/90 border border-secondaryLight/30 rounded-full px-3.5 py-2 flex items-center gap-2 text-xs font-semibold text-secondaryLight backdrop-blur-lg">
 								<span className="w-2 h-2 rounded-full bg-secondaryLight shadow-[0_0_0_3px_rgba(0,219,203,0.2)] animate-pulse" />
-								Open to missions
+								{t.hero.availability}
 							</div>
 						</div>
 					</div>

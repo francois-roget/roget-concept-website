@@ -1,6 +1,9 @@
+'use client';
+
 import { FaLinkedin, FaGithub } from 'react-icons/fa';
 import BrandBackground from '@/components/ui/BrandBackground';
 import ArrowIcon from '@/components/ui/ArrowIcon';
+import { useTranslation } from '@/i18n/LanguageProvider';
 
 function MailIcon() {
 	return (
@@ -38,30 +41,32 @@ function MapPinIcon() {
 	);
 }
 
-const contactLinks = [
-	{
-		icon: <MailIcon />,
-		label: 'francois@roget-concept.be',
-		href: 'mailto:francois@roget-concept.be',
-	},
-	{
-		icon: <FaLinkedin className="text-lg" />,
-		label: 'linkedin.com/in/francoisroget',
-		href: 'https://linkedin.com/in/francoisroget',
-	},
-	{
-		icon: <FaGithub className="text-lg" />,
-		label: 'github.com/francois-roget',
-		href: 'https://github.com/francois-roget',
-	},
-	{
-		icon: <MapPinIcon />,
-		label: 'Belgium · Available remotely worldwide',
-		href: null as string | null,
-	},
-];
-
 export default function ContactCTA() {
+	const { t } = useTranslation();
+
+	const contactLinks = [
+		{
+			icon: <MailIcon />,
+			label: 'francois@roget-concept.be',
+			href: 'mailto:francois@roget-concept.be',
+		},
+		{
+			icon: <FaLinkedin className="text-lg" />,
+			label: 'linkedin.com/in/francoisroget',
+			href: 'https://linkedin.com/in/francoisroget',
+		},
+		{
+			icon: <FaGithub className="text-lg" />,
+			label: 'github.com/francois-roget',
+			href: 'https://github.com/francois-roget',
+		},
+		{
+			icon: <MapPinIcon />,
+			label: t.contact.location,
+			href: null as string | null,
+		},
+	];
+
 	return (
 		<section
 			id="contact"
@@ -74,23 +79,21 @@ export default function ContactCTA() {
 					<div>
 						<p className="inline-flex items-center gap-2 text-[11px] font-bold tracking-[0.2em] uppercase text-secondary mb-3.5">
 							<span className="w-7 h-0.5 bg-secondary/50" />
-							Let&apos;s talk
+							{t.contact.eyebrow}
 						</p>
 						<h2 className="text-4xl lg:text-5xl font-black text-white tracking-tight mb-4 leading-tight">
-							Start a project
+							{t.contact.title}
 							<br />
-							together
+							{t.contact.titleLine2}
 						</h2>
 						<p className="text-[17px] text-white/45 leading-relaxed max-w-md mb-10">
-							Have a challenge? Need a technical lead, an architect, or a
-							trainer who can hit the ground running? Let&apos;s find out if
-							we&apos;re a good fit.
+							{t.contact.description}
 						</p>
 						<a
 							href="mailto:francois@roget-concept.be"
 							className="inline-flex items-center gap-2 bg-gradient-to-r from-secondary to-secondaryLight text-white font-bold text-sm rounded-md px-10 py-4 shadow-lg shadow-secondary/30 hover:shadow-secondary/50 hover:-translate-y-0.5 transition-all tracking-[0.04em] uppercase"
 						>
-							Send me a message
+							{t.contact.cta}
 							<ArrowIcon />
 						</a>
 					</div>
@@ -98,7 +101,7 @@ export default function ContactCTA() {
 					{/* Right: Contact links */}
 					<div className="bg-white/[0.04] border border-white/10 rounded-2xl px-9 py-10 backdrop-blur-lg">
 						<h3 className="text-lg font-extrabold text-white mb-6 tracking-tight">
-							Get in touch
+							{t.contact.cardTitle}
 						</h3>
 						<div className="flex flex-col gap-4">
 							{contactLinks.map((link) => {

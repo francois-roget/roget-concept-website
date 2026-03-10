@@ -47,13 +47,3 @@ export const techStack = [
 	{ name: 'PHP', color: 'bg-[#777BB4]' },
 	{ name: 'Nx', color: 'bg-[#143055]' },
 ];
-
-export const navLinks = ['Services', 'Expertise', 'Clients', 'Articles'];
-
-export const footerLinks = [
-	'Services',
-	'Expertise',
-	'Clients',
-	'Articles',
-	'Contact',
-];
