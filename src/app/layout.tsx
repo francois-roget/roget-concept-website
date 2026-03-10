@@ -1,5 +1,6 @@
 import type { Metadata } from 'next';
 import localFont from 'next/font/local';
+import { Analytics } from '@vercel/analytics/next';
 import { LanguageProvider } from '@/i18n/LanguageProvider';
 import './globals.css';
 
@@ -45,6 +46,7 @@ export default function RootLayout({
 		<html lang="en">
 			<body className={`${redHatDisplay.className} antialiased`}>
 				<LanguageProvider>{children}</LanguageProvider>
+				<Analytics />
 			</body>
 		</html>
 	);
