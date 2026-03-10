@@ -1,16 +1,21 @@
+'use client';
+
 import Image from 'next/image';
 import SectionHeader from '@/components/ui/SectionHeader';
 import ArrowIcon from '@/components/ui/ArrowIcon';
+import { useTranslation } from '@/i18n/LanguageProvider';
 import { articles } from '@/data/site-data';
 
 export default function Articles() {
+	const { t } = useTranslation();
+
 	return (
 		<section id="articles" className="py-28 lg:py-32 bg-rcGreyLight">
 			<div className="max-w-[1160px] mx-auto px-6 lg:px-12">
 				<SectionHeader
-					eyebrow="Knowledge sharing"
-					title="Some articles I wrote"
-					description="Practical content on frontend development, architecture, and modern engineering practices."
+					eyebrow={t.articles.eyebrow}
+					title={t.articles.title}
+					description={t.articles.description}
 				/>
 
 				<div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
@@ -47,7 +52,7 @@ export default function Articles() {
 									{article.title}
 								</h3>
 								<p className="inline-flex items-center gap-1.5 mt-4 text-[13px] font-bold text-secondary tracking-[0.04em] uppercase">
-									Read article
+									{t.articles.readMore}
 									<ArrowIcon
 										strokeWidth={1.5}
 										className="group-hover:translate-x-0.5 transition-transform duration-300"

@@ -1,15 +1,20 @@
+'use client';
+
 import Image from 'next/image';
 import SectionHeader from '@/components/ui/SectionHeader';
+import { useTranslation } from '@/i18n/LanguageProvider';
 import { companies } from '@/data/site-data';
 
 export default function Clients() {
+	const { t } = useTranslation();
+
 	return (
 		<section id="clients" className="py-24 lg:py-28 bg-white">
 			<div className="max-w-[1160px] mx-auto px-6 lg:px-12">
 				<SectionHeader
-					eyebrow="Trust"
-					title="They trusted me already"
-					description="From fintech to aviation — working with organisations that demand technical excellence."
+					eyebrow={t.clients.eyebrow}
+					title={t.clients.title}
+					description={t.clients.description}
 				/>
 				<div className="grid grid-cols-2 md:grid-cols-4 gap-px bg-rcGrey/12 border border-rcGrey/12 rounded-xl overflow-hidden">
 					{companies.map((company) => (

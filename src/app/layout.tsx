@@ -1,5 +1,6 @@
 import type { Metadata } from 'next';
 import localFont from 'next/font/local';
+import { LanguageProvider } from '@/i18n/LanguageProvider';
 import './globals.css';
 
 const redHatDisplay = localFont({
@@ -43,7 +44,7 @@ export default function RootLayout({
 	return (
 		<html lang="en">
 			<body className={`${redHatDisplay.className} antialiased`}>
-				{children}
+				<LanguageProvider>{children}</LanguageProvider>
 			</body>
 		</html>
 	);

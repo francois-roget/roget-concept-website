@@ -1,5 +1,8 @@
+'use client';
+
 import { FaChalkboardTeacher } from 'react-icons/fa';
 import SectionHeader from '@/components/ui/SectionHeader';
+import { useTranslation } from '@/i18n/LanguageProvider';
 
 interface ServiceCardProps {
 	icon: React.ReactNode;
@@ -59,13 +62,15 @@ function ServiceCard({
 }
 
 export default function Services() {
+	const { t } = useTranslation();
+
 	return (
 		<section id="services" className="py-28 lg:py-32 bg-rcGreyLight">
 			<div className="max-w-[1160px] mx-auto px-6 lg:px-12">
 				<SectionHeader
-					eyebrow="What I do"
-					title="Services"
-					description="Two core offerings, one obsession: making your team and your code better."
+					eyebrow={t.services.eyebrow}
+					title={t.services.title}
+					description={t.services.description}
 				/>
 
 				<div className="grid grid-cols-1 md:grid-cols-2 gap-7">
@@ -76,36 +81,20 @@ export default function Services() {
 							</span>
 						}
 						number="01"
-						label="Consultancy"
-						title="IT Consultancy"
-						tagline="Boost your tech team with expertise that makes the difference."
-						paragraphs={[
-							'With 20+ years of hands-on experience in frontend and fullstack development, I help companies design, build and scale high-quality web applications.',
-							'Whether you need a React expert, a solution architect, or a seasoned developer who can hit the ground running — I bring clarity, velocity, and long-term thinking to your projects.',
-						]}
-						points={[
-							'React & TypeScript architecture reviews and hands-on development',
-							'Fullstack integration with Java and PHP backends',
-							'Technical leadership and code quality improvement',
-							'Pragmatic, no-nonsense solutions focused on business results',
-						]}
+						label={t.services.consultancy.label}
+						title={t.services.consultancy.title}
+						tagline={t.services.consultancy.tagline}
+						paragraphs={t.services.consultancy.paragraphs}
+						points={t.services.consultancy.points}
 					/>
 					<ServiceCard
 						icon={<FaChalkboardTeacher />}
 						number="02"
-						label="Training"
-						title="Technical Training"
-						tagline="Empower your developers. Accelerate your team."
-						paragraphs={[
-							'Tailored training sessions for modern web development with React, TypeScript, Nx, and more. From hands-on workshops to advanced architecture courses, my trainings are designed to be practical, engaging, and immediately applicable.',
-							"Whether you're onboarding juniors or upskilling seniors, I help your team grow with confidence and purpose.",
-						]}
-						points={[
-							'React, TypeScript and Nx workshops for all levels',
-							'Advanced architecture and micro-frontend courses',
-							'Hands-on sessions, immediately applicable on real projects',
-							'Onboarding programmes for junior and senior developers',
-						]}
+						label={t.services.training.label}
+						title={t.services.training.title}
+						tagline={t.services.training.tagline}
+						paragraphs={t.services.training.paragraphs}
+						points={t.services.training.points}
 					/>
 				</div>
 			</div>
