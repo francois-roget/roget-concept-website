@@ -2,6 +2,7 @@ import type { Metadata } from 'next';
 import localFont from 'next/font/local';
 import { Analytics } from '@vercel/analytics/next';
 import { LanguageProvider } from '@/i18n/LanguageProvider';
+import { SpeedInsights } from '@vercel/speed-insights/next';
 import './globals.css';
 
 const redHatDisplay = localFont({
@@ -47,6 +48,7 @@ export default function RootLayout({
 			<body className={`${redHatDisplay.className} antialiased`}>
 				<LanguageProvider>{children}</LanguageProvider>
 				<Analytics />
+				<SpeedInsights />
 			</body>
 		</html>
 	);
