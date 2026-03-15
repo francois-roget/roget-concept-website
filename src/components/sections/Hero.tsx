@@ -15,8 +15,21 @@ export default function Hero() {
 			<div className="relative max-w-[1160px] mx-auto px-6 lg:px-12 pt-32 pb-24 w-full">
 				<div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
 					{/* Left: Content */}
-					<div>
-						<p className="inline-flex items-center gap-2 text-[11px] font-semibold tracking-[0.2em] uppercase text-secondaryLight mb-7">
+					<div className="relative">
+						{/* Passport-style photo — mobile only */}
+						<div className="absolute top-0 right-0 lg:hidden">
+							<div className="relative w-[72px] h-[88px] rounded-xl overflow-hidden border-2 border-secondaryLight/30 shadow-lg shadow-black/30">
+								<Image
+									src="/fro-pro.JPG"
+									alt="Fran&ccedil;ois Roget"
+									fill
+									className="object-cover object-top"
+									priority
+								/>
+							</div>
+						</div>
+
+						<p className="inline-flex items-center gap-2 text-[11px] font-semibold tracking-[0.2em] uppercase text-secondaryLight mb-7 pr-20 lg:pr-0">
 							<span className="w-7 h-0.5 bg-secondaryLight" />
 							{t.hero.eyebrow}
 						</p>
