@@ -4,7 +4,7 @@ import { useState } from 'react';
 import Image from 'next/image';
 import { useTranslation, type Locale } from '@/i18n/LanguageProvider';
 
-const navSections = ['services', 'expertise', 'clients', 'articles'] as const;
+const navSections = ['services', 'expertise', 'clients', 'articles', 'apps'] as const;
 
 export default function Navbar() {
 	const { t, locale, setLocale } = useTranslation();
