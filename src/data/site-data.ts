@@ -1,5 +1,12 @@
 export const articles = [
 	{
+		title: 'I Built an iOS App Without Knowing Swift — Here\'s What Actually Happened',
+		url: 'https://medium.com/@francois-roget/i-built-an-ios-app-without-knowing-swift-heres-what-actually-happened-7e928c38e712',
+		image:
+			'https://miro.medium.com/v2/resize:fit:1400/format:webp/1*ios-article-cover.jpeg',
+		tags: ['iOS', 'Swift'],
+	},
+	{
 		title: 'My First Open Source Contribution',
 		url: 'https://medium.com/@francois-roget/my-first-open-source-contribution-5707aebc0408',
 		image:
@@ -26,13 +33,6 @@ export const articles = [
 		image:
 			'https://miro.medium.com/v2/resize:fit:1400/format:webp/1*BseOQyheuz2bqJtLss60tg.png',
 		tags: ['React', 'Micro Frontends'],
-	},
-	{
-		title: 'I Built an iOS App Without Knowing Swift — Here\'s What Actually Happened',
-		url: 'https://medium.com/@francois-roget/i-built-an-ios-app-without-knowing-swift-heres-what-actually-happened-7e928c38e712',
-		image:
-			'https://miro.medium.com/v2/resize:fit:1400/format:webp/1*ios-article-cover.jpeg',
-		tags: ['iOS', 'Swift'],
 	},
 ];
 
