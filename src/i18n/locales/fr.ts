@@ -6,6 +6,7 @@ export const fr: Translations = {
 		expertise: 'Expertise',
 		clients: 'Clients',
 		articles: 'Articles',
+		apps: 'Apps',
 		contact: 'Me contacter',
 	},
 	hero: {
@@ -117,6 +118,22 @@ export const fr: Translations = {
 		description:
 			"Du contenu pratique sur le développement frontend, l'architecture et les pratiques d'ingénierie modernes.",
 		readMore: "Lire l'article",
+	},
+	apps: {
+		eyebrow: 'Side Project · iOS',
+		title: 'Paniers',
+		tagline: 'Faites vos courses en famille, en harmonie',
+		description:
+			"Développé de A à Z comme projet iOS personnel — sans connaissance préalable de Swift — Paniers est une liste de courses intelligente, respectueuse de la vie privée, synchronisée en temps réel sur tous vos appareils Apple.",
+		features: {
+			ai: 'Catégorisation intelligente par IA (Apple Intelligence & CoreML)',
+			sharing: 'Partage familial en temps réel via un simple lien, sans compte',
+			platforms: 'Disponible sur iPhone, iPad, Mac & Apple Watch',
+			privacy: 'Aucun serveur, aucune pub — chiffrement iCloud de bout en bout',
+		},
+		cta: "Télécharger sur l'App Store",
+		ctaSecondary: "Lire l'article",
+		free: "Gratuit sur l'App Store",
 	},
 	contact: {
 		eyebrow: 'Parlons-en',

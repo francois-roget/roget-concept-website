@@ -4,6 +4,7 @@ export const en = {
 		expertise: 'Expertise',
 		clients: 'Clients',
 		articles: 'Articles',
+		apps: 'Apps',
 		contact: 'Contact me',
 	},
 	hero: {
@@ -108,6 +109,22 @@ export const en = {
 		description:
 			'Practical content on frontend development, architecture, and modern engineering practices.',
 		readMore: 'Read article',
+	},
+	apps: {
+		eyebrow: 'Side Project · iOS',
+		title: 'Paniers',
+		tagline: 'The shopping list that thinks like you',
+		description:
+			'Built from scratch as a personal iOS project — without prior Swift knowledge — Paniers is a smart, privacy-focused shopping list that syncs in real time across all your Apple devices.',
+		features: {
+			ai: 'Smart AI categorisation with Apple Intelligence & CoreML',
+			sharing: 'Real-time family sharing via a simple link, no account needed',
+			platforms: 'Available on iPhone, iPad, Mac & Apple Watch',
+			privacy: 'No servers, no ads — end-to-end iCloud encryption',
+		},
+		cta: 'Download on App Store',
+		ctaSecondary: 'Read the article',
+		free: 'Free on App Store',
 	},
 	contact: {
 		eyebrow: "Let's talk",

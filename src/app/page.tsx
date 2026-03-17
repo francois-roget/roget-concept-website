@@ -5,6 +5,7 @@ import Expertise from '@/components/sections/Expertise';
 import TechStackBar from '@/components/sections/TechStackBar';
 import Clients from '@/components/sections/Clients';
 import Articles from '@/components/sections/Articles';
+import AppShowcase from '@/components/sections/AppShowcase';
 import ContactCTA from '@/components/sections/ContactCTA';
 import Footer from '@/components/sections/Footer';
 
@@ -18,6 +19,7 @@ export default function Home() {
 			<TechStackBar />
 			<Clients />
 			<Articles />
+			<AppShowcase />
 			<ContactCTA />
 			<Footer />
 		</>
