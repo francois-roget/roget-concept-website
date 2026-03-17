@@ -27,6 +27,13 @@ export const articles = [
 			'https://miro.medium.com/v2/resize:fit:1400/format:webp/1*BseOQyheuz2bqJtLss60tg.png',
 		tags: ['React', 'Micro Frontends'],
 	},
+	{
+		title: 'I Built an iOS App Without Knowing Swift — Here\'s What Actually Happened',
+		url: 'https://medium.com/@francois-roget/i-built-an-ios-app-without-knowing-swift-heres-what-actually-happened-7e928c38e712',
+		image:
+			'https://miro.medium.com/v2/resize:fit:1400/format:webp/1*ios-article-cover.jpeg',
+		tags: ['iOS', 'Swift'],
+	},
 ];
 
 export const companies = [
