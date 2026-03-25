@@ -52,5 +52,5 @@ export const techStack = [
 	{ name: 'TypeScript', color: 'bg-[#3178C6]' },
 	{ name: 'Java', color: 'bg-[#ED8B00]' },
 	{ name: 'PHP', color: 'bg-[#777BB4]' },
-	{ name: 'Nx', color: 'bg-[#143055]' },
+	{ name: 'Next.js', color: 'bg-[#000000]' },
 ];
