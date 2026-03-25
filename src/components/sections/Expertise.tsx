@@ -47,7 +47,7 @@ const expertiseCards = [
 const statsData = [
 	{ value: '20+', key: 'years' as const },
 	{ value: '8+', key: 'clients' as const },
-	{ value: '4', key: 'articles' as const },
+	{ value: '5+', key: 'articles' as const },
 ];
 
 export default function Expertise() {
