@@ -1,9 +1,10 @@
 import { FaReact, FaJava, FaPhp } from 'react-icons/fa';
-import { SiTypescript } from 'react-icons/si';
+import { SiTypescript, SiNextdotjs } from 'react-icons/si';
 
 const techIcons = [
 	{ icon: <FaReact />, title: 'React' },
 	{ icon: <SiTypescript />, title: 'TypeScript' },
+	{ icon: <SiNextdotjs />, title: 'Next.js' },
 	{ icon: <FaJava />, title: 'Java' },
 	{ icon: <FaPhp />, title: 'PHP' },
 ];
