@@ -10,6 +10,7 @@ import {
 } from 'react-icons/fa';
 import SectionHeader from '@/components/ui/SectionHeader';
 import { useTranslation } from '@/i18n/LanguageProvider';
+import { articles } from '@/data/site-data';
 
 const expertiseCards = [
 	{
@@ -47,7 +48,7 @@ const expertiseCards = [
 const statsData = [
 	{ value: '20+', key: 'years' as const },
 	{ value: '8+', key: 'clients' as const },
-	{ value: '5+', key: 'articles' as const },
+	{ value: `${articles.length}+`, key: 'articles' as const },
 ];
 
 export default function Expertise() {
