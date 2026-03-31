@@ -12,7 +12,7 @@ const footerSections = [
 ] as const;
 
 export default function Footer() {
-	const { t } = useTranslation();
+	const { t, locale } = useTranslation();
 
 	return (
 		<footer className="bg-[#12122e]">
@@ -43,7 +43,7 @@ export default function Footer() {
 				<div className="max-w-[1160px] mx-auto px-6 lg:px-12 py-4 flex items-center justify-between flex-wrap gap-2">
 					<span className="text-xs text-white/20">{t.footer.legal}</span>
 					<a
-						href="/privacy"
+						href={`/${locale}/privacy`}
 						className="text-xs text-white/20 hover:text-secondaryLight transition-colors"
 					>
 						{t.footer.privacyPolicy}
