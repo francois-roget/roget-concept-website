@@ -11,6 +11,7 @@ export const fr: Translations = {
 	},
 	hero: {
 		eyebrow: 'Disponible pour de nouvelles missions',
+		h1: 'François Roget — Développeur Full Stack Freelance Senior & Architecte, Belgique',
 		hello: 'Bonjour, je suis',
 		roles: [
 			'Développeur',
