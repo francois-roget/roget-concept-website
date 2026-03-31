@@ -37,14 +37,35 @@ export const articles = [
 ];
 
 export const companies = [
-	{ name: 'Eurocontrol', logo: '/logos/Eurocontrol.png' },
-	{ name: 'Be.Brussels', logo: '/logos/Be_Brussels.png' },
-	{ name: 'APB', logo: '/logos/apb.png' },
-	{ name: 'Tunz', logo: '/logos/Tunz.webp' },
-	{ name: 'Ingenico', logo: '/logos/Ingenico.png' },
-	{ name: 'Worldline', logo: '/logos/Worldline.png' },
-	{ name: 'Paynovate', logo: '/logos/Paynovate.png' },
-	{ name: 'Keytrade Bank', logo: '/logos/Keytrade.png' },
+	{ name: 'Eurocontrol', logo: '/logos/Eurocontrol.png', role: 'Software Architect & Developer · 9 years' },
+	{ name: 'Be.Brussels', logo: '/logos/Be_Brussels.png', role: 'Project Lead & Tech Architect · ~2 years' },
+	{ name: 'APB', logo: '/logos/apb.png', role: 'Project Lead & Tech Architect · ~2 years' },
+	{ name: 'Tunz', logo: '/logos/Tunz.webp', role: 'Senior Dev → Platform Architect · 7.5 years' },
+	{ name: 'Ingenico', logo: '/logos/Ingenico.png', role: 'Senior Developer & Lead Designer · 4 years' },
+	{ name: 'Worldline', logo: '/logos/Worldline.png', role: 'Lead Designer & Platform Architect · 3.5 years' },
+	{ name: 'Paynovate', logo: '/logos/Paynovate.png', role: 'Senior Frontend Engineer & Tech Lead · 9 months' },
+	{ name: 'Keytrade Bank', logo: '/logos/Keytrade.png', role: 'Senior Frontend Developer · Since 2025' },
+];
+
+export const testimonials = [
+	{
+		quote: "François is methodical and skilled. His attention to detail in coding best practices, coupled with his commitment to performance and maintainability, makes his work both reliable and future-proof. What sets him apart is his intuitive sense for UI/UX — an invaluable asset that not every frontend developer possesses. He consistently delivers interfaces that are visually appealing and thoughtfully designed.",
+		author: "Gaëtan Denaisse",
+		title: "DevOps & Testing Coach",
+		company: "Worldline",
+	},
+	{
+		quote: "I had the chance to work with François for a few years — a great experience. As a junior, he accompanied and supervised me during my first steps. François knows his stuff: undisputed master of React and Java. He is very professional and, beyond that, a great colleague and an asset to teams. Always ready to support and encourage colleagues in search of new knowledge.",
+		author: "Emilie Bialais",
+		title: "React Developer",
+		company: "Worldline",
+	},
+	{
+		quote: "François made my life as Product Manager so much easier. He comes to every meeting with ideas and concrete approaches. He works diligently and always puts UI/UX at the forefront. He provides great support to all members of the team and is constantly on hand to assist with any questions. I would highly recommend François to anybody looking for his skills.",
+		author: "Zofia Barnes",
+		title: "Product Manager",
+		company: "Paynovate",
+	},
 ];
 
 export const techStack = [
