@@ -17,9 +17,10 @@ export const metadata: Metadata = {
 	},
 	title: 'Roget Concept — Full Stack Development & Technical Training',
 	description:
-		'François Roget, Senior Full Stack Developer and Architect with 20+ years of experience. IT Consultancy, React/TypeScript expertise, and technical training.',
+		'François Roget, Freelance Senior Full Stack Developer and Architect with 20+ years of experience. Available for IT Consultancy missions, React/TypeScript expertise, and technical training.',
 	keywords: [
-		'Full Stack Developer',
+		'Freelance Full Stack Developer',
+		'Freelance React Developer',
 		'React',
 		'TypeScript',
 		'IT Consultancy',
@@ -29,7 +30,7 @@ export const metadata: Metadata = {
 	openGraph: {
 		title: 'Roget Concept — Full Stack Development & Technical Training',
 		description:
-			'François Roget, Senior Full Stack Developer and Architect with 20+ years of experience.',
+			'François Roget, Freelance Senior Full Stack Developer and Architect with 20+ years of experience.',
 		url: 'https://www.roget-concept.be',
 		siteName: 'Roget Concept',
 		locale: 'en_US',
@@ -47,7 +48,7 @@ export const metadata: Metadata = {
 		card: 'summary_large_image',
 		title: 'Roget Concept — Full Stack Development & Technical Training',
 		description:
-			'François Roget, Senior Full Stack Developer and Architect with 20+ years of experience.',
+			'François Roget, Freelance Senior Full Stack Developer and Architect with 20+ years of experience.',
 		images: ['/og-image.jpg'],
 	},
 };
