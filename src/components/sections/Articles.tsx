@@ -18,7 +18,7 @@ export default function Articles() {
 					description={t.articles.description}
 				/>
 
-				<div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+				<div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
 					{articles.map((article) => (
 						<a
 							key={article.title}
@@ -48,16 +48,24 @@ export default function Articles() {
 										</span>
 									))}
 								</div>
-								<h3 className="text-[15px] font-extrabold text-primary leading-snug mb-auto">
+								<h3 className="text-[15px] font-extrabold text-primary leading-snug mb-3">
 									{article.title}
 								</h3>
-								<p className="inline-flex items-center gap-1.5 mt-4 text-[13px] font-bold text-secondary tracking-[0.04em] uppercase">
-									{t.articles.readMore}
-									<ArrowIcon
-										strokeWidth={1.5}
-										className="group-hover:translate-x-0.5 transition-transform duration-300"
-									/>
+								<p className="text-[13px] text-rcGrey/70 leading-relaxed line-clamp-3 mb-auto">
+									{article.excerpt}
 								</p>
+								<div className="flex items-center justify-between mt-4">
+									<span className="text-[11px] text-rcGrey/40 font-medium">
+										{article.date}
+									</span>
+									<p className="inline-flex items-center gap-1.5 text-[13px] font-bold text-secondary tracking-[0.04em] uppercase">
+										{t.articles.readMore}
+										<ArrowIcon
+											strokeWidth={1.5}
+											className="group-hover:translate-x-0.5 transition-transform duration-300"
+										/>
+									</p>
+								</div>
 							</div>
 						</a>
 					))}

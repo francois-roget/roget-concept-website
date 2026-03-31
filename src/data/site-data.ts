@@ -1,31 +1,12 @@
 export const articles = [
 	{
-		title: 'I Built an iOS App Without Knowing Swift — Here\'s What Actually Happened',
+		title: "I Built an iOS App Without Knowing Swift — Here's What Actually Happened",
 		url: 'https://medium.com/@francois-roget/i-built-an-ios-app-without-knowing-swift-heres-what-actually-happened-7e928c38e712',
 		image:
 			'https://miro.medium.com/v2/resize:fit:4800/format:webp/1*d-Glkq1q0-h7_lAGFbpvrw.png',
 		tags: ['iOS', 'Swift'],
-	},
-	{
-		title: 'My First Open Source Contribution',
-		url: 'https://medium.com/@francois-roget/my-first-open-source-contribution-5707aebc0408',
-		image:
-			'https://miro.medium.com/v2/resize:fit:4800/format:webp/1*x3l55V89muzuP3oOOSxKuw.jpeg',
-		tags: ['Open Source', 'Github'],
-	},
-	{
-		title: 'How to Conditionally Render React UI Based on User Permissions',
-		url: 'https://medium.com/@francois-roget/how-to-conditionally-render-react-ui-based-on-user-permissions-7b9a1c73ffe2',
-		image:
-			'https://miro.medium.com/v2/resize:fit:4800/format:webp/1*uJ7uijA2eurqLs_XxXjO-w.jpeg',
-		tags: ['React', 'Permissions'],
-	},
-	{
-		title: 'Accelerate Your Prototypes Development by Using a Monorepo',
-		url: 'https://medium.com/stackademic/accelerate-your-prototypes-development-by-using-a-monorepo-2ecac78e9087',
-		image:
-			'https://miro.medium.com/v2/resize:fit:1400/format:webp/1*eJhDX2imHUMrTXYcEeR_Qg.jpeg',
-		tags: ['Monorepo', 'Prototyping'],
+		date: 'March 2026',
+		excerpt: 'How Claude Code, CloudKit, and a shared grocery list turned into a six-week crash course in Swift, iOS development, and shipping something real.',
 	},
 	{
 		title: 'How to Build a Dynamic Micro-Frontend Architecture in React',
@@ -33,6 +14,35 @@ export const articles = [
 		image:
 			'https://miro.medium.com/v2/resize:fit:1400/format:webp/1*BseOQyheuz2bqJtLss60tg.png',
 		tags: ['React', 'Micro Frontends'],
+		date: 'February 2024',
+		excerpt: 'A deep dive into building a dynamic micro-frontend architecture in React — covering module federation, routing strategies, and inter-app communication.',
+	},
+	{
+		title: 'Accelerate Your Prototypes Development by Using a Monorepo',
+		url: 'https://medium.com/stackademic/accelerate-your-prototypes-development-by-using-a-monorepo-2ecac78e9087',
+		image:
+			'https://miro.medium.com/v2/resize:fit:1400/format:webp/1*eJhDX2imHUMrTXYcEeR_Qg.jpeg',
+		tags: ['Monorepo', 'Prototyping'],
+		date: 'September 2023',
+		excerpt: 'How adopting an Nx monorepo to manage multiple prototypes accelerates development by sharing code, tooling, and CI configuration across projects.',
+	},
+	{
+		title: 'How to Conditionally Render React UI Based on User Permissions',
+		url: 'https://medium.com/@francois-roget/how-to-conditionally-render-react-ui-based-on-user-permissions-7b9a1c73ffe2',
+		image:
+			'https://miro.medium.com/v2/resize:fit:4800/format:webp/1*uJ7uijA2eurqLs_XxXjO-w.jpeg',
+		tags: ['React', 'Permissions'],
+		date: 'May 2021',
+		excerpt: 'A practical pattern for controlling what users see based on their roles — without scattering conditional logic across your React component tree.',
+	},
+	{
+		title: 'My First Open Source Contribution',
+		url: 'https://medium.com/@francois-roget/my-first-open-source-contribution-5707aebc0408',
+		image:
+			'https://miro.medium.com/v2/resize:fit:4800/format:webp/1*x3l55V89muzuP3oOOSxKuw.jpeg',
+		tags: ['Open Source', 'Github'],
+		date: 'August 2020',
+		excerpt: 'A personal account of making a first open source contribution — finding the right issue, navigating an unfamiliar codebase, and getting a PR merged.',
 	},
 ];
 
