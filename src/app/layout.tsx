@@ -34,12 +34,21 @@ export const metadata: Metadata = {
 		siteName: 'Roget Concept',
 		locale: 'en_US',
 		type: 'website',
+		images: [
+			{
+				url: '/og-image.jpg',
+				width: 1200,
+				height: 630,
+				alt: 'François Roget — Senior Full Stack Developer & Architect',
+			},
+		],
 	},
 	twitter: {
 		card: 'summary_large_image',
 		title: 'Roget Concept — Full Stack Development & Technical Training',
 		description:
 			'François Roget, Senior Full Stack Developer and Architect with 20+ years of experience.',
+		images: ['/og-image.jpg'],
 	},
 };
 
