@@ -112,6 +112,11 @@ export const fr: Translations = {
 		description:
 			"De la fintech à l'aviation — au service d'organisations qui exigent l'excellence technique.",
 	},
+	testimonials: {
+		eyebrow: 'Recommandations',
+		title: 'Ce que disent mes collègues',
+		description: "Recommandations LinkedIn de personnes avec lesquelles j'ai travaillé directement.",
+	},
 	articles: {
 		eyebrow: 'Partage de connaissances',
 		title: "Quelques articles que j'ai écrits",

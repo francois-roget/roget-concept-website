@@ -103,6 +103,11 @@ export const en = {
 		description:
 			'From fintech to aviation — working with organisations that demand technical excellence.',
 	},
+	testimonials: {
+		eyebrow: 'Recommendations',
+		title: 'What colleagues say',
+		description: 'From LinkedIn recommendations by people I have worked with directly.',
+	},
 	articles: {
 		eyebrow: 'Knowledge sharing',
 		title: 'Some articles I wrote',

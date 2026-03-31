@@ -20,7 +20,7 @@ export default function Clients() {
 					{companies.map((company) => (
 						<div
 							key={company.name}
-							className="group bg-white flex items-center justify-center px-8 py-9 hover:bg-rcGreyLight transition-colors duration-300"
+							className="group bg-white flex flex-col items-center justify-center px-6 py-7 hover:bg-rcGreyLight transition-colors duration-300 gap-3"
 						>
 							<Image
 								src={company.logo}
@@ -29,6 +29,9 @@ export default function Clients() {
 								height={60}
 								className="grayscale opacity-50 group-hover:grayscale-0 group-hover:opacity-100 transition-all duration-300 object-contain max-h-[60px]"
 							/>
+							<span className="text-[11px] text-rcGrey/50 group-hover:text-rcGrey text-center leading-tight transition-colors duration-300">
+								{company.role}
+							</span>
 						</div>
 					))}
 				</div>

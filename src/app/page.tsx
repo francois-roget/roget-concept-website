@@ -4,6 +4,7 @@ import Services from '@/components/sections/Services';
 import Expertise from '@/components/sections/Expertise';
 import TechStackBar from '@/components/sections/TechStackBar';
 import Clients from '@/components/sections/Clients';
+import Testimonials from '@/components/sections/Testimonials';
 import Articles from '@/components/sections/Articles';
 import AppShowcase from '@/components/sections/AppShowcase';
 import ContactCTA from '@/components/sections/ContactCTA';
@@ -18,6 +19,7 @@ export default function Home() {
 			<Expertise />
 			<TechStackBar />
 			<Clients />
+			<Testimonials />
 			<Articles />
 			<AppShowcase />
 			<ContactCTA />
