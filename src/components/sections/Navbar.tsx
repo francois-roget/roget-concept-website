@@ -65,7 +65,7 @@ export default function Navbar() {
 				{/* Mobile burger button */}
 				<button
 					onClick={() => setIsMenuOpen((v) => !v)}
-					className="lg:hidden flex flex-col justify-center items-center w-10 h-10 gap-[5px] focus:outline-none"
+					className="lg:hidden flex flex-col justify-center items-center w-11 h-11 gap-[5px] focus:outline-none"
 					aria-label="Menu"
 				>
 					<span
