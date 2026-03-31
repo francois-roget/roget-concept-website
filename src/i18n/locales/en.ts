@@ -138,6 +138,8 @@ export const en = {
 	},
 	footer: {
 		copyright: 'All rights reserved',
+		legal: 'Roget Concept SRL — BTW BE 1008.928.573',
+		privacyPolicy: 'Privacy Policy',
 	},
 };
 

@@ -147,5 +147,7 @@ export const fr: Translations = {
 	},
 	footer: {
 		copyright: 'Tous droits réservés',
+		legal: 'Roget Concept SRL — BTW BE 1008.928.573',
+		privacyPolicy: 'Politique de confidentialité',
 	},
 };
