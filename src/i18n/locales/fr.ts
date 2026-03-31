@@ -43,7 +43,7 @@ export const fr: Translations = {
 			tagline:
 				'Un expert freelance pour renforcer votre équipe tech avec une expertise qui fait la différence.',
 			paragraphs: [
-				"Basé en Belgique, fort de plus de 20 ans d'expérience en développement frontend et fullstack, j'aide les entreprises à travers l'Europe à concevoir, développer et faire évoluer des applications web de haute qualité.",
+				"Basé en Belgique, fort de plus de 20 ans d'expérience en développement full-stack, j'aide les entreprises à travers l'Europe à concevoir, développer et faire évoluer des applications web de haute qualité.",
 				"Que vous ayez besoin d'un expert React, d'un architecte solutions ou d'un développeur senior opérationnel immédiatement — j'apporte clarté, vélocité et vision à long terme à vos projets.",
 			],
 			points: [
@@ -74,7 +74,7 @@ export const fr: Translations = {
 		eyebrow: 'Profil technique',
 		title: 'Mon expertise',
 		description:
-			'Des connaissances approfondies sur toute la stack web, avec une approche frontend-first.',
+			'Des connaissances approfondies sur toute la stack web, avec une affinité naturelle pour le frontend.',
 		stats: {
 			years: "Années d'expérience",
 			clients: 'Clients majeurs',
