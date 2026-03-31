@@ -3,6 +3,7 @@ import localFont from 'next/font/local';
 import { Analytics } from '@vercel/analytics/next';
 import { LanguageProvider } from '@/i18n/LanguageProvider';
 import { SpeedInsights } from '@vercel/speed-insights/next';
+import { structuredData } from './structured-data';
 import './globals.css';
 
 const redHatDisplay = localFont({
@@ -49,6 +50,12 @@ export default function RootLayout({
 }>) {
 	return (
 		<html lang="en">
+			<head>
+				<script
+					type="application/ld+json"
+					dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }}
+				/>
+			</head>
 			<body className={`${redHatDisplay.className} antialiased`}>
 				<LanguageProvider>{children}</LanguageProvider>
 				<Analytics />
