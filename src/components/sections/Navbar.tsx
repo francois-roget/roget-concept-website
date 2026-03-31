@@ -2,6 +2,7 @@
 
 import { useState } from 'react';
 import Image from 'next/image';
+import Link from 'next/link';
 import { useTranslation, type Locale } from '@/i18n/LanguageProvider';
 
 const navSections = ['services', 'expertise', 'clients', 'articles', 'apps'] as const;
@@ -15,12 +16,14 @@ export default function Navbar() {
 	return (
 		<nav className="fixed top-0 w-full z-50 bg-primaryDark/95 backdrop-blur-xl border-b border-white/[0.07]">
 			<div className="max-w-[1160px] mx-auto px-6 lg:px-12 h-[72px] flex items-center justify-between">
-				<Image
-					src="/roget-concept-logo-white.svg"
-					alt="Roget Concept"
-					width={160}
-					height={44}
-				/>
+				<Link href={`/${locale}`} onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}>
+					<Image
+						src="/roget-concept-logo-white.svg"
+						alt="Roget Concept"
+						width={160}
+						height={44}
+					/>
+				</Link>
 
 				{/* Desktop navigation */}
 				<div className="hidden md:flex items-center gap-9">
