@@ -26,7 +26,7 @@ export default function Navbar() {
 				</Link>
 
 				{/* Desktop navigation */}
-				<div className="hidden md:flex items-center gap-9">
+				<div className="hidden lg:flex items-center gap-9">
 					{navSections.map((id) => (
 						<a
 							key={id}
@@ -46,7 +46,7 @@ export default function Navbar() {
 								)}
 								<button
 									onClick={() => setLocale(lang as Locale)}
-									className={`transition-colors uppercase ${locale === lang ? 'text-white' : 'text-white/40 hover:text-white/70'}`}
+									className={`min-w-[44px] min-h-[44px] flex items-center justify-center transition-colors uppercase ${locale === lang ? 'text-white' : 'text-white/40 hover:text-white/70'}`}
 								>
 									{lang}
 								</button>
@@ -65,7 +65,7 @@ export default function Navbar() {
 				{/* Mobile burger button */}
 				<button
 					onClick={() => setIsMenuOpen((v) => !v)}
-					className="md:hidden flex flex-col justify-center items-center w-10 h-10 gap-[5px] focus:outline-none"
+					className="lg:hidden flex flex-col justify-center items-center w-10 h-10 gap-[5px] focus:outline-none"
 					aria-label="Menu"
 				>
 					<span
@@ -82,7 +82,7 @@ export default function Navbar() {
 
 			{/* Mobile menu panel */}
 			{isMenuOpen && (
-				<div className="md:hidden bg-primaryDark/98 backdrop-blur-xl border-t border-white/[0.07] px-6 py-6 flex flex-col gap-1">
+				<div className="lg:hidden bg-primaryDark/98 backdrop-blur-xl border-t border-white/[0.07] px-6 py-6 flex flex-col gap-1">
 					{navSections.map((id) => (
 						<a
 							key={id}
@@ -114,7 +114,7 @@ export default function Navbar() {
 										setLocale(lang as Locale);
 										closeMenu();
 									}}
-									className={`transition-colors uppercase ${locale === lang ? 'text-white' : 'text-white/40 hover:text-white/70'}`}
+									className={`min-w-[44px] min-h-[44px] flex items-center justify-center transition-colors uppercase ${locale === lang ? 'text-white' : 'text-white/40 hover:text-white/70'}`}
 								>
 									{lang}
 								</button>
