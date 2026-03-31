@@ -35,7 +35,7 @@ export const en = {
 			tagline:
 				'A freelance expert to boost your tech team with expertise that makes the difference.',
 			paragraphs: [
-				'Based in Belgium with 20+ years of hands-on experience in frontend and fullstack development, I help companies across Europe design, build and scale high-quality web applications.',
+				'Based in Belgium with 20+ years of hands-on experience in full-stack development, I help companies across Europe design, build and scale high-quality web applications.',
 				'Whether you need a React expert, a solution architect, or a seasoned developer who can hit the ground running — I bring clarity, velocity, and long-term thinking to your projects.',
 			],
 			points: [
@@ -65,7 +65,7 @@ export const en = {
 		eyebrow: 'Technical profile',
 		title: 'My Expertise',
 		description:
-			'Deep knowledge across the full web stack, with a frontend-first mindset.',
+			'Deep knowledge across the full web stack, with a natural affinity for the frontend layer.',
 		stats: {
 			years: 'Years of experience',
 			clients: 'Major clients',
