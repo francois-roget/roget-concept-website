@@ -66,6 +66,18 @@ export const testimonials = [
 		title: "Product Manager",
 		company: "Paynovate",
 	},
+	{
+		quote: "Working with François was easy. Good listener, smart and fast to understand complex topics. He is efficient in designing, developing, testing and maintaining the exact solutions resulting from discussion, would it be UI or back end components. React Guru, he shares his passion and knowledge smoothly. I hope we'll collaborate on another mission soon!",
+		author: "Fabrice Clin",
+		title: "Software Architect / Full-Stack Dev",
+		company: "Freelance",
+	},
+	{
+		quote: "François was my mentor during my internship at Paynovate, and his experience and expertise helped me take a significant step forward as a React developer. He made me aware of the standards and expectations of professional code, something I hadn't fully experienced before. Thanks to his guidance, I gained valuable insights into best practices that I still carry with me today. Beyond his technical skills, François is a great mentor, approachable, and an excellent teacher.",
+		author: "Mirko Bozzetto",
+		title: "React & Node Developer",
+		company: "Paynovate",
+	},
 ];
 
 export const techStack = [
