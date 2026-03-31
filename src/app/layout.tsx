@@ -10,6 +10,10 @@ const redHatDisplay = localFont({
 });
 
 export const metadata: Metadata = {
+	metadataBase: new URL('https://www.roget-concept.be'),
+	alternates: {
+		canonical: '/',
+	},
 	title: 'Roget Concept — Full Stack Development & Technical Training',
 	description:
 		'François Roget, Senior Full Stack Developer and Architect with 20+ years of experience. IT Consultancy, React/TypeScript expertise, and technical training.',
@@ -25,7 +29,7 @@ export const metadata: Metadata = {
 		title: 'Roget Concept — Full Stack Development & Technical Training',
 		description:
 			'François Roget, Senior Full Stack Developer and Architect with 20+ years of experience.',
-		url: 'https://roget-concept.be',
+		url: 'https://www.roget-concept.be',
 		siteName: 'Roget Concept',
 		locale: 'en_US',
 		type: 'website',
