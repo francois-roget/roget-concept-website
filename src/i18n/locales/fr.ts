@@ -23,9 +23,9 @@ export const fr: Translations = {
 		bio: 'Un développeur freelance senior, architecte et mentor technique avec ',
 		bioHighlight: "plus de 20 ans d'expérience",
 		bioContinue:
-			". J'aide les équipes à livrer des applications web robustes, maintenables et évolutives.",
+			". Basé en Belgique, j'aide les équipes à livrer des applications web robustes, maintenables et évolutives.",
 		bioSub:
-			'Des solutions pragmatiques qui font avancer vos projets.',
+			'Des solutions pragmatiques qui font avancer vos projets — disponible à distance dans le monde entier.',
 		cta: 'Travaillons ensemble',
 		ctaSecondary: 'Découvrir mes services',
 		stack: 'Stack',
@@ -43,7 +43,7 @@ export const fr: Translations = {
 			tagline:
 				'Un expert freelance pour renforcer votre équipe tech avec une expertise qui fait la différence.',
 			paragraphs: [
-				"Fort de plus de 20 ans d'expérience en développement frontend et fullstack, j'aide les entreprises à concevoir, développer et faire évoluer des applications web de haute qualité.",
+				"Basé en Belgique, fort de plus de 20 ans d'expérience en développement frontend et fullstack, j'aide les entreprises à travers l'Europe à concevoir, développer et faire évoluer des applications web de haute qualité.",
 				"Que vous ayez besoin d'un expert React, d'un architecte solutions ou d'un développeur senior opérationnel immédiatement — j'apporte clarté, vélocité et vision à long terme à vos projets.",
 			],
 			points: [
