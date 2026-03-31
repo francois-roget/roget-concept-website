@@ -11,7 +11,7 @@ export const en = {
 		eyebrow: 'Available for new missions',
 		hello: "Hello, I'm",
 		roles: ['Developer', 'Tech Lead', 'Architect', 'Teacher', 'Writer'],
-		bio: 'A senior frontend developer, architect, and technical mentor with ',
+		bio: 'A freelance senior full-stack developer, architect, and technical mentor with ',
 		bioHighlight: '20+ years of experience',
 		bioContinue:
 			'. I help teams deliver robust, maintainable, and scalable web applications.',
@@ -32,7 +32,7 @@ export const en = {
 			label: 'Consultancy',
 			title: 'IT Consultancy',
 			tagline:
-				'Boost your tech team with expertise that makes the difference.',
+				'A freelance expert to boost your tech team with expertise that makes the difference.',
 			paragraphs: [
 				'With 20+ years of hands-on experience in frontend and fullstack development, I help companies design, build and scale high-quality web applications.',
 				'Whether you need a React expert, a solution architect, or a seasoned developer who can hit the ground running — I bring clarity, velocity, and long-term thinking to your projects.',

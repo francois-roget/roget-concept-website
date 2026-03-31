@@ -19,7 +19,7 @@ export const fr: Translations = {
 			'Formateur',
 			'Auteur',
 		],
-		bio: 'Un développeur frontend senior, architecte et mentor technique avec ',
+		bio: 'Un développeur freelance senior, architecte et mentor technique avec ',
 		bioHighlight: "plus de 20 ans d'expérience",
 		bioContinue:
 			". J'aide les équipes à livrer des applications web robustes, maintenables et évolutives.",
@@ -40,7 +40,7 @@ export const fr: Translations = {
 			label: 'Consultance',
 			title: 'Consultance IT',
 			tagline:
-				'Renforcez votre équipe tech avec une expertise qui fait la différence.',
+				'Un expert freelance pour renforcer votre équipe tech avec une expertise qui fait la différence.',
 			paragraphs: [
 				"Fort de plus de 20 ans d'expérience en développement frontend et fullstack, j'aide les entreprises à concevoir, développer et faire évoluer des applications web de haute qualité.",
 				"Que vous ayez besoin d'un expert React, d'un architecte solutions ou d'un développeur senior opérationnel immédiatement — j'apporte clarté, vélocité et vision à long terme à vos projets.",
