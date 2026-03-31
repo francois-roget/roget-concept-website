@@ -1,4 +1,5 @@
 import type { Metadata } from 'next';
+import { headers } from 'next/headers';
 import localFont from 'next/font/local';
 import { Analytics } from '@vercel/analytics/next';
 import { LanguageProvider } from '@/i18n/LanguageProvider';
@@ -12,54 +13,18 @@ const redHatDisplay = localFont({
 
 export const metadata: Metadata = {
 	metadataBase: new URL('https://www.roget-concept.be'),
-	alternates: {
-		canonical: '/',
-	},
-	title: 'Roget Concept — Full Stack Development & Technical Training',
-	description:
-		'François Roget, Freelance Senior Full Stack Developer and Architect with 20+ years of experience. Available for IT Consultancy missions, React/TypeScript expertise, and technical training.',
-	keywords: [
-		'Freelance Full Stack Developer',
-		'Freelance React Developer',
-		'React',
-		'TypeScript',
-		'IT Consultancy',
-		'Technical Training',
-		'Software Architect',
-	],
-	openGraph: {
-		title: 'Roget Concept — Full Stack Development & Technical Training',
-		description:
-			'François Roget, Freelance Senior Full Stack Developer and Architect with 20+ years of experience.',
-		url: 'https://www.roget-concept.be',
-		siteName: 'Roget Concept',
-		locale: 'en_US',
-		type: 'website',
-		images: [
-			{
-				url: '/og-image.jpg',
-				width: 1200,
-				height: 630,
-				alt: 'François Roget — Senior Full Stack Developer & Architect',
-			},
-		],
-	},
-	twitter: {
-		card: 'summary_large_image',
-		title: 'Roget Concept — Full Stack Development & Technical Training',
-		description:
-			'François Roget, Freelance Senior Full Stack Developer and Architect with 20+ years of experience.',
-		images: ['/og-image.jpg'],
-	},
 };
 
-export default function RootLayout({
+export default async function RootLayout({
 	children,
 }: Readonly<{
 	children: React.ReactNode;
 }>) {
+	const headersList = await headers();
+	const locale = headersList.get('x-locale') ?? 'en';
+
 	return (
-		<html lang="en">
+		<html lang={locale}>
 			<head>
 				<script
 					type="application/ld+json"
