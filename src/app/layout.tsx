@@ -8,7 +8,7 @@ import { structuredData } from './structured-data';
 import './globals.css';
 
 const redHatDisplay = localFont({
-	src: './fonts/RedHatDisplay-Variable.ttf',
+	src: './fonts/RedHatDisplay-Variable.woff2',
 });
 
 export const metadata: Metadata = {
