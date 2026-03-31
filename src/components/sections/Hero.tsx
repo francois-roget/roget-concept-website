@@ -36,12 +36,13 @@ export default function Hero() {
 						<p className="text-white/70 text-lg lg:text-xl mb-1">
 							{t.hero.hello}
 						</p>
-						<h1 className="text-5xl lg:text-[88px] font-black text-white leading-[0.95] tracking-tight mb-5">
+						<h1 className="sr-only">{t.hero.h1}</h1>
+						<p className="text-5xl lg:text-[88px] font-black text-white leading-[0.95] tracking-tight mb-5">
 							Fran
 							<span className="bg-gradient-to-r from-secondary to-secondaryLight bg-clip-text text-transparent">
 								&ccedil;ois
 							</span>
-						</h1>
+						</p>
 
 						<div className="flex flex-wrap gap-2 mb-8">
 							{t.hero.roles.map((role) => (

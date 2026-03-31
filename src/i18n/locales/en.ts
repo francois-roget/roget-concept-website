@@ -9,6 +9,7 @@ export const en = {
 	},
 	hero: {
 		eyebrow: 'Available for new missions',
+		h1: 'François Roget — Freelance Senior Full Stack Developer & Architect, Belgium',
 		hello: "Hello, I'm",
 		roles: ['Developer', 'Tech Lead', 'Architect', 'Teacher', 'Writer'],
 		bio: 'A freelance senior full-stack developer, architect, and technical mentor with ',
