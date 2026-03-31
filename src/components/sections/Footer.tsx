@@ -15,8 +15,8 @@ export default function Footer() {
 	const { t } = useTranslation();
 
 	return (
-		<footer className="bg-[#12122e] py-10">
-			<div className="max-w-[1160px] mx-auto px-6 lg:px-12 flex items-center justify-between flex-wrap gap-4">
+		<footer className="bg-[#12122e]">
+			<div className="max-w-[1160px] mx-auto px-6 lg:px-12 py-10 flex items-center justify-between flex-wrap gap-4">
 				<Image
 					src="/roget-concept-logo-white.svg"
 					alt="Roget Concept"
@@ -38,6 +38,17 @@ export default function Footer() {
 					&copy; {new Date().getFullYear()} Fran&ccedil;ois Roget —{' '}
 					{t.footer.copyright}
 				</span>
+			</div>
+			<div className="border-t border-white/5">
+				<div className="max-w-[1160px] mx-auto px-6 lg:px-12 py-4 flex items-center justify-between flex-wrap gap-2">
+					<span className="text-xs text-white/20">{t.footer.legal}</span>
+					<a
+						href="/privacy"
+						className="text-xs text-white/20 hover:text-secondaryLight transition-colors"
+					>
+						{t.footer.privacyPolicy}
+					</a>
+				</div>
 			</div>
 		</footer>
 	);
