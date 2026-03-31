@@ -1,4 +1,4 @@
-import type { Metadata } from 'next';
+import type { Metadata, Viewport } from 'next';
 import { headers } from 'next/headers';
 import localFont from 'next/font/local';
 import { Analytics } from '@vercel/analytics/next';
@@ -10,6 +10,10 @@ import './globals.css';
 const redHatDisplay = localFont({
 	src: './fonts/RedHatDisplay-Variable.woff2',
 });
+
+export const viewport: Viewport = {
+	themeColor: '#12122e',
+};
 
 export const metadata: Metadata = {
 	metadataBase: new URL('https://www.roget-concept.be'),
