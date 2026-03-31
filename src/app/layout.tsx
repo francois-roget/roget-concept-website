@@ -13,6 +13,12 @@ const redHatDisplay = localFont({
 
 export const metadata: Metadata = {
 	metadataBase: new URL('https://www.roget-concept.be'),
+	icons: {
+		icon: [
+			{ url: '/favicon.ico', sizes: '48x48', type: 'image/x-icon' },
+			{ url: '/favicon.svg', type: 'image/svg+xml' },
+		],
+	},
 };
 
 export default async function RootLayout({
