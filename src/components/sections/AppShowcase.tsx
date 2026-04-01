@@ -120,7 +120,7 @@ export default function AppShowcase() {
 								<div className="bg-[#c8efc0] flex items-center justify-center" style={{ aspectRatio: '9/19.5' }}>
 									<div className="relative w-[80%] aspect-square mt-6">
 										<Image
-											src="/paniers-icon.png"
+											src="/paniers-icon.webp"
 											alt="Paniers — smart shopping list app for iPhone, iPad, Mac and Apple Watch"
 											fill
 											sizes="240px"
