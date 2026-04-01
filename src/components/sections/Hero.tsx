@@ -20,7 +20,7 @@ export default function Hero() {
 						<div className="absolute top-0 right-0 lg:hidden">
 							<div className="relative w-[72px] h-[88px] rounded-xl overflow-hidden border-2 border-secondaryLight/30 shadow-lg shadow-black/30">
 								<Image
-									src="/fro-pro.JPG"
+									src="/fro-pro.webp"
 									alt="Fran&ccedil;ois Roget, Senior Full Stack Developer and Architect based in Belgium"
 									fill
 									sizes="72px"
@@ -106,7 +106,7 @@ export default function Hero() {
 						<div className="relative w-[420px] h-[520px]">
 							<div className="absolute inset-0 rounded-2xl overflow-hidden bg-gradient-to-br from-secondary to-primary">
 								<Image
-									src="/fro-pro.JPG"
+									src="/fro-pro.webp"
 									alt="Fran&ccedil;ois Roget, Senior Full Stack Developer and Architect based in Belgium"
 									fill
 									sizes="(max-width: 1023px) 0px, 420px"
