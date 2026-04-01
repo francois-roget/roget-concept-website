@@ -12,6 +12,10 @@ export const structuredData = {
 			mainEntity: { '@id': `${BASE_URL}/#person` },
 			dateModified: new Date().toISOString().split('T')[0],
 			inLanguage: ['en', 'fr'],
+			speakable: {
+				'@type': 'SpeakableSpecification',
+				cssSelector: ['#hero-bio', '#service-consultancy', '#service-training'],
+			},
 		},
 		{
 			'@type': 'Person',

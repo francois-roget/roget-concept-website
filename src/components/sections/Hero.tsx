@@ -56,7 +56,7 @@ export default function Hero() {
 							))}
 						</div>
 
-						<p className="text-base text-white/60 leading-relaxed max-w-lg mb-2">
+						<p id="hero-bio" className="text-base text-white/60 leading-relaxed max-w-lg mb-2">
 							{t.hero.bio}
 							<strong className="text-white/85 font-semibold">
 								{t.hero.bioHighlight}
