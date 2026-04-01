@@ -1,5 +1,6 @@
 import { notFound } from 'next/navigation';
 import type { Metadata } from 'next';
+import { getStructuredData } from '@/app/structured-data';
 
 type Props = {
 	children: React.ReactNode;
@@ -123,5 +124,14 @@ export default async function LocaleLayout({ children, params }: Props) {
 	if (!VALID_LOCALES.includes(locale)) {
 		notFound();
 	}
-	return <>{children}</>;
+	const structuredData = getStructuredData(locale as 'en' | 'fr');
+	return (
+		<>
+			<script
+				type="application/ld+json"
+				dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }}
+			/>
+			{children}
+		</>
+	);
 }

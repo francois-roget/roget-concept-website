@@ -4,7 +4,6 @@ import localFont from 'next/font/local';
 import { Analytics } from '@vercel/analytics/next';
 import { LanguageProvider } from '@/i18n/LanguageProvider';
 import { SpeedInsights } from '@vercel/speed-insights/next';
-import { structuredData } from './structured-data';
 import './globals.css';
 
 const redHatDisplay = localFont({
@@ -39,11 +38,7 @@ export default async function RootLayout({
 		<html lang={locale}>
 			<head>
 				<link rel="preconnect" href="https://miro.medium.com" />
-				<script
-					type="application/ld+json"
-					dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }}
-				/>
-			</head>
+	</head>
 			<body className={`${redHatDisplay.className} antialiased`}>
 				<LanguageProvider>{children}</LanguageProvider>
 				<Analytics />
