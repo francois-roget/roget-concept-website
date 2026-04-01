@@ -8,6 +8,7 @@ const footerSections = [
 	'expertise',
 	'clients',
 	'articles',
+	'apps',
 	'contact',
 ] as const;
 
