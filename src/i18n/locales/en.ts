@@ -42,7 +42,7 @@ export const en = {
 				'React & TypeScript architecture reviews and hands-on development',
 				'Fullstack integration with Java and PHP backends',
 				'Technical leadership and code quality improvement',
-				'Pragmatic, no-nonsense solutions focused on business results',
+				'Available for European remote engagements, operational from day one',
 			],
 		},
 		training: {
@@ -51,8 +51,9 @@ export const en = {
 			tagline: 'Empower your developers. Accelerate your team.',
 			paragraphs: [
 				'Tailored training sessions for modern web development with React, TypeScript, Nx, and more. From hands-on workshops to advanced architecture courses, my trainings are designed to be practical, engaging, and immediately applicable.',
-				"Whether you're onboarding juniors or upskilling seniors, I help your team grow with confidence and purpose.",
+				"Whether you're onboarding juniors or upskilling seniors, I help your team grow with confidence and purpose. Available for on-site workshops in Belgium and northern France, and remote sessions worldwide.",
 			],
+			cta: 'Get in touch about training',
 			points: [
 				'React, TypeScript and Nx workshops for all levels',
 				'Advanced architecture and micro-frontend courses',

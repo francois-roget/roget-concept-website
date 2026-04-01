@@ -8,26 +8,44 @@ export default function sitemap(): MetadataRoute.Sitemap {
     {
       url: `${BASE_URL}/en`,
       lastModified,
-      changeFrequency: 'monthly',
-      priority: 1,
+      alternates: {
+        languages: {
+          en: `${BASE_URL}/en`,
+          fr: `${BASE_URL}/fr`,
+          'x-default': `${BASE_URL}/en`,
+        },
+      },
     },
     {
       url: `${BASE_URL}/fr`,
       lastModified,
-      changeFrequency: 'monthly',
-      priority: 1,
+      alternates: {
+        languages: {
+          en: `${BASE_URL}/en`,
+          fr: `${BASE_URL}/fr`,
+          'x-default': `${BASE_URL}/en`,
+        },
+      },
     },
     {
       url: `${BASE_URL}/en/privacy`,
       lastModified,
-      changeFrequency: 'yearly',
-      priority: 0.3,
+      alternates: {
+        languages: {
+          en: `${BASE_URL}/en/privacy`,
+          fr: `${BASE_URL}/fr/privacy`,
+        },
+      },
     },
     {
       url: `${BASE_URL}/fr/privacy`,
       lastModified,
-      changeFrequency: 'yearly',
-      priority: 0.3,
+      alternates: {
+        languages: {
+          en: `${BASE_URL}/en/privacy`,
+          fr: `${BASE_URL}/fr/privacy`,
+        },
+      },
     },
   ]
 }
