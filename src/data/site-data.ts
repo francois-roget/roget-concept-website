@@ -47,14 +47,14 @@ export const articles = [
 ];
 
 export const companies = [
-	{ name: 'Eurocontrol', logo: '/logos/Eurocontrol.png', role: 'Software Architect & Developer · 9 years' },
-	{ name: 'Be.Brussels', logo: '/logos/Be_Brussels.png', role: 'Project Lead & Tech Architect · ~2 years' },
-	{ name: 'APB', logo: '/logos/apb.png', role: 'Project Lead & Tech Architect · ~2 years' },
+	{ name: 'Eurocontrol', logo: '/logos/Eurocontrol.webp', role: 'Software Architect & Developer · 9 years' },
+	{ name: 'Be.Brussels', logo: '/logos/Be_Brussels.webp', role: 'Project Lead & Tech Architect · ~2 years' },
+	{ name: 'APB', logo: '/logos/apb.webp', role: 'Project Lead & Tech Architect · ~2 years' },
 	{ name: 'Tunz', logo: '/logos/Tunz.webp', role: 'Senior Dev → Platform Architect · 7.5 years' },
-	{ name: 'Ingenico', logo: '/logos/Ingenico.png', role: 'Senior Developer & Lead Designer · 4 years' },
-	{ name: 'Worldline', logo: '/logos/Worldline.png', role: 'Lead Designer & Platform Architect · 3.5 years' },
-	{ name: 'Paynovate', logo: '/logos/Paynovate.png', role: 'Senior Frontend Engineer & Tech Lead · 9 months' },
-	{ name: 'Keytrade Bank', logo: '/logos/Keytrade.png', role: 'Senior Frontend Developer · Since 2025' },
+	{ name: 'Ingenico', logo: '/logos/Ingenico.webp', role: 'Senior Developer & Lead Designer · 4 years' },
+	{ name: 'Worldline', logo: '/logos/Worldline.webp', role: 'Lead Designer & Platform Architect · 3.5 years' },
+	{ name: 'Paynovate', logo: '/logos/Paynovate.webp', role: 'Senior Frontend Engineer & Tech Lead · 9 months' },
+	{ name: 'Keytrade Bank', logo: '/logos/Keytrade.webp', role: 'Senior Frontend Developer · Since 2025' },
 ];
 
 export const testimonials = [
