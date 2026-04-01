@@ -121,8 +121,9 @@ export default function AppShowcase() {
 									<div className="relative w-[80%] aspect-square mt-6">
 										<Image
 											src="/paniers-icon.png"
-											alt="Paniers app icon"
+											alt="Paniers — smart shopping list app for iPhone, iPad, Mac and Apple Watch"
 											fill
+											sizes="240px"
 											className="object-contain drop-shadow-xl"
 										/>
 									</div>

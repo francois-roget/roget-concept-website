@@ -9,6 +9,7 @@ export default function robots(): MetadataRoute.Robots {
       { userAgent: 'ClaudeBot', allow: '/' },
       { userAgent: 'PerplexityBot', allow: '/' },
       { userAgent: 'Google-Extended', allow: '/' },
+      { userAgent: 'Anthropic-AI', allow: '/' },
     ],
     sitemap: 'https://www.roget-concept.be/sitemap.xml',
   }
