@@ -12,7 +12,7 @@ function getLocaleFromPath(pathname: string): Locale {
 	return pathname.startsWith('/fr') ? 'fr' : 'en'
 }
 
-export function proxy(request: NextRequest) {
+export function middleware(request: NextRequest) {
 	const { pathname } = request.nextUrl
 
 	// Redirect root to preferred locale
