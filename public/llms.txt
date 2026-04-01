@@ -1,6 +1,7 @@
 # Roget Concept
 
 > François Roget is a senior full-stack developer, software architect, and technical trainer based in Belgium with 20+ years of experience. He specialises in React, TypeScript, and frontend architecture, offering freelance IT consultancy and developer training services remotely worldwide.
+> License: https://rsl.ai/1.0
 
 ## Services
 
@@ -10,10 +11,10 @@ With 20+ years of hands-on experience in frontend and fullstack development, Fra
 - React & TypeScript architecture reviews and hands-on development
 - Fullstack integration with Java and PHP backends
 - Technical leadership and code quality improvement
-- Pragmatic, no-nonsense solutions focused on business results
+- Available for European remote engagements, operational from day one
 
 ### Technical Training
-Tailored training sessions for modern web development with React, TypeScript, Nx, and more. From hands-on workshops to advanced architecture courses, trainings are designed to be practical, engaging, and immediately applicable.
+Tailored training sessions for modern web development with React, TypeScript, Nx, and more. From hands-on workshops to advanced architecture courses, trainings are designed to be practical, engaging, and immediately applicable. Available for on-site workshops in Belgium and northern France, and remote sessions worldwide.
 
 - React, TypeScript and Nx workshops for all levels
 - Advanced architecture and micro-frontend courses
@@ -31,7 +32,14 @@ Tailored training sessions for modern web development with React, TypeScript, Nx
 
 ## Clients
 
-Eurocontrol, Be.Brussels, Ingenico, Worldline, Keytrade Bank, Paynovate, APB, Tunz
+- Eurocontrol — Software Architect & Developer · 9 years
+- Tunz — Senior Dev → Platform Architect · 7.5 years
+- Ingenico — Senior Developer & Lead Designer · 4 years
+- Worldline — Lead Designer & Platform Architect · 3.5 years
+- Be.Brussels — Project Lead & Tech Architect · ~2 years
+- APB — Project Lead & Tech Architect · ~2 years
+- Paynovate — Senior Frontend Engineer & Tech Lead · 9 months
+- Keytrade Bank — Senior Frontend Developer · Since 2025
 
 ## Articles
 
