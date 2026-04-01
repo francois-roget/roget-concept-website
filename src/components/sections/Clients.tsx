@@ -27,6 +27,7 @@ export default function Clients() {
 								alt={company.name}
 								width={120}
 								height={60}
+								sizes="120px"
 								className="grayscale opacity-50 group-hover:grayscale-0 group-hover:opacity-100 transition-all duration-300 object-contain max-h-[60px]"
 							/>
 							<span className="text-[11px] text-rcGrey/50 group-hover:text-rcGrey text-center leading-tight transition-colors duration-300">

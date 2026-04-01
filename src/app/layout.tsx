@@ -9,6 +9,7 @@ import './globals.css';
 
 const redHatDisplay = localFont({
 	src: './fonts/RedHatDisplay-Variable.woff2',
+	adjustFontFallback: 'Arial',
 });
 
 export const viewport: Viewport = {
@@ -37,6 +38,7 @@ export default async function RootLayout({
 	return (
 		<html lang={locale}>
 			<head>
+				<link rel="preconnect" href="https://miro.medium.com" />
 				<script
 					type="application/ld+json"
 					dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }}

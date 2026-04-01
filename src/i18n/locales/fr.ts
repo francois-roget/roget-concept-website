@@ -60,8 +60,9 @@ export const fr: Translations = {
 				'Faites monter en compétences vos développeurs. Accélérez votre équipe.',
 			paragraphs: [
 				"Des formations sur mesure pour le développement web moderne avec React, TypeScript, Nx, et plus encore. Des workshops pratiques aux cours d'architecture avancée, mes formations sont conçues pour être pratiques, engageantes et immédiatement applicables.",
-				"Que vous intégriez des juniors ou fassiez monter en compétences des seniors, j'aide votre équipe à grandir avec confiance.",
+				"Que vous intégriez des juniors ou fassiez monter en compétences des seniors, j'aide votre équipe à grandir avec confiance. Disponible pour des workshops en présentiel en Belgique et dans le nord de la France, et en remote dans le monde entier.",
 			],
+			cta: 'Me contacter pour une formation',
 			points: [
 				'Workshops React, TypeScript et Nx pour tous les niveaux',
 				"Cours avancés d'architecture et de micro-frontends",
