@@ -43,7 +43,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
 			openGraph: {
 				title: 'Roget Concept — Développeur Full Stack & Formation Technique',
 				description:
-					"François Roget, développeur freelance senior full stack et architecte avec plus de 20 ans d'expérience.",
+					"François Roget, développeur freelance senior full stack et architecte avec plus de 20 ans d'expérience. Disponible pour des missions de consultance IT, expertise React/TypeScript et formation technique.",
 				url: `${BASE_URL}/fr`,
 				siteName: 'Roget Concept',
 				locale: 'fr_BE',
@@ -62,7 +62,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
 				card: 'summary_large_image',
 				title: 'Roget Concept — Développeur Full Stack & Formation Technique',
 				description:
-					"François Roget, développeur freelance senior full stack et architecte avec plus de 20 ans d'expérience.",
+					"François Roget, développeur freelance senior full stack et architecte avec plus de 20 ans d'expérience. Disponible pour des missions de consultance IT, expertise React/TypeScript et formation technique.",
 				images: ['/og-image.jpg'],
 			},
 		};
@@ -94,7 +94,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
 		openGraph: {
 			title: 'Roget Concept — Full Stack Development & Technical Training',
 			description:
-				'François Roget, Freelance Senior Full Stack Developer and Architect with 20+ years of experience.',
+				'François Roget, Freelance Senior Full Stack Developer and Architect with 20+ years of experience. Available for IT consultancy missions, React/TypeScript expertise, and technical training.',
 			url: `${BASE_URL}/en`,
 			siteName: 'Roget Concept',
 			locale: 'en_US',
@@ -113,7 +113,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
 			card: 'summary_large_image',
 			title: 'Roget Concept — Full Stack Development & Technical Training',
 			description:
-				'François Roget, Freelance Senior Full Stack Developer and Architect with 20+ years of experience.',
+				'François Roget, Freelance Senior Full Stack Developer and Architect with 20+ years of experience. Available for IT consultancy missions, React/TypeScript expertise, and technical training.',
 			images: ['/og-image.jpg'],
 		},
 	};

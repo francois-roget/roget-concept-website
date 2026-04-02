@@ -17,6 +17,9 @@ export const viewport: Viewport = {
 
 export const metadata: Metadata = {
 	metadataBase: new URL('https://www.roget-concept.be'),
+	openGraph: {
+		type: 'website',
+	},
 	icons: {
 		icon: [
 			{ url: '/favicon.ico', sizes: '48x48', type: 'image/x-icon' },
