@@ -1,14 +1,14 @@
-'use client';
-
 import Image from 'next/image';
 import SectionHeader from '@/components/ui/SectionHeader';
 import ArrowIcon from '@/components/ui/ArrowIcon';
-import { useTranslation } from '@/i18n/LanguageProvider';
+import { type Translations } from '@/i18n/locales/en';
 import { articles } from '@/data/site-data';
 
-export default function Articles() {
-	const { t } = useTranslation();
+interface Props {
+	t: Translations;
+}
 
+export default function Articles({ t }: Props) {
 	return (
 		<section id="articles" className="py-28 lg:py-32 bg-rcGreyLight">
 			<div className="max-w-[1160px] mx-auto px-6 lg:px-12">

@@ -1,14 +1,14 @@
-'use client';
-
 import Image from 'next/image';
 import BrandBackground from '@/components/ui/BrandBackground';
 import ArrowIcon from '@/components/ui/ArrowIcon';
-import { useTranslation } from '@/i18n/LanguageProvider';
+import { type Translations } from '@/i18n/locales/en';
 import { techStack } from '@/data/site-data';
 
-export default function Hero() {
-	const { t } = useTranslation();
+interface Props {
+	t: Translations;
+}
 
+export default function Hero({ t }: Props) {
 	return (
 		<section className="relative min-h-screen bg-gradient-to-br from-primaryDark via-primary to-[#2a2a88] flex items-center overflow-hidden">
 			<BrandBackground showMark />

@@ -1,5 +1,3 @@
-'use client';
-
 import {
 	FaReact,
 	FaCubes,
@@ -9,7 +7,7 @@ import {
 	FaPenFancy,
 } from 'react-icons/fa';
 import SectionHeader from '@/components/ui/SectionHeader';
-import { useTranslation } from '@/i18n/LanguageProvider';
+import { type Translations } from '@/i18n/locales/en';
 import { articles } from '@/data/site-data';
 
 const expertiseCards = [
@@ -51,9 +49,11 @@ const statsData = [
 	{ value: `${articles.length}+`, key: 'articles' as const },
 ];
 
-export default function Expertise() {
-	const { t } = useTranslation();
+interface Props {
+	t: Translations;
+}
 
+export default function Expertise({ t }: Props) {
 	return (
 		<section
 			id="expertise"

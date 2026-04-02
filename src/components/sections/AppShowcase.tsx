@@ -1,10 +1,8 @@
-'use client';
-
 import Image from 'next/image';
 import { HiSparkles, HiUsers, HiDevicePhoneMobile, HiShieldCheck } from 'react-icons/hi2';
 import { SiAppstore } from 'react-icons/si';
 import ArrowIcon from '@/components/ui/ArrowIcon';
-import { useTranslation } from '@/i18n/LanguageProvider';
+import { type Translations } from '@/i18n/locales/en';
 
 const APP_STORE_URL = 'https://apps.apple.com/us/app/paniers/id6759610076';
 const ARTICLE_URL =
@@ -12,9 +10,11 @@ const ARTICLE_URL =
 
 const platforms = ['iPhone', 'iPad', 'Mac', 'Apple Watch'];
 
-export default function AppShowcase() {
-	const { t } = useTranslation();
+interface Props {
+	t: Translations;
+}
 
+export default function AppShowcase({ t }: Props) {
 	const features = [
 		{ icon: <HiSparkles />, label: t.apps.features.ai },
 		{ icon: <HiUsers />, label: t.apps.features.sharing },

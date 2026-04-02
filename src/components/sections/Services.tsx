@@ -1,8 +1,6 @@
-'use client';
-
 import { FaChalkboardTeacher } from 'react-icons/fa';
 import SectionHeader from '@/components/ui/SectionHeader';
-import { useTranslation } from '@/i18n/LanguageProvider';
+import { type Translations } from '@/i18n/locales/en';
 
 interface ServiceCardProps {
 	icon: React.ReactNode;
@@ -73,9 +71,11 @@ function ServiceCard({
 	);
 }
 
-export default function Services() {
-	const { t } = useTranslation();
+interface Props {
+	t: Translations;
+}
 
+export default function Services({ t }: Props) {
 	return (
 		<section id="services" className="py-28 lg:py-32 bg-rcGreyLight">
 			<div className="max-w-[1160px] mx-auto px-6 lg:px-12">
