@@ -81,6 +81,7 @@ export const fr: Translations = {
 			clients: 'Clients majeurs',
 			articles: 'Articles publiés',
 		},
+		education: 'Bachelier en Sciences Informatiques — ESI Bruxelles · 2009',
 		cards: {
 			frontend: {
 				name: 'Frontend',
@@ -156,5 +157,6 @@ export const fr: Translations = {
 		copyright: 'Tous droits réservés',
 		legal: 'Roget Concept SRL — BTW BE 1008.928.573',
 		privacyPolicy: 'Politique de confidentialité',
+		termsOfService: 'Conditions Générales',
 	},
 };

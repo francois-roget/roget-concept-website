@@ -72,6 +72,7 @@ export const en = {
 			clients: 'Major clients',
 			articles: 'Published articles',
 		},
+		education: 'BSc Computer Science — ESI Bruxelles · 2009',
 		cards: {
 			frontend: {
 				name: 'Frontend',
@@ -147,6 +148,7 @@ export const en = {
 		copyright: 'All rights reserved',
 		legal: 'Roget Concept SRL — BTW BE 1008.928.573',
 		privacyPolicy: 'Privacy Policy',
+		termsOfService: 'Terms of Service',
 	},
 };
 
