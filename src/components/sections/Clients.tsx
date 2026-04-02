@@ -30,9 +30,16 @@ export default function Clients({ t }: Props) {
 								sizes="120px"
 								className="grayscale opacity-50 group-hover:grayscale-0 group-hover:opacity-100 transition-all duration-300 object-contain max-h-[60px]"
 							/>
-							<span className="text-[11px] text-rcGrey/50 group-hover:text-rcGrey text-center leading-tight transition-colors duration-300">
-								{company.role}
-							</span>
+							<div className="flex flex-col items-center gap-0.5">
+								{company.role.split(' · ').map((line, i) => (
+									<span
+										key={i}
+										className="text-[11px] text-rcGrey/50 group-hover:text-rcGrey text-center leading-tight transition-colors duration-300"
+									>
+										{line}
+									</span>
+								))}
+							</div>
 						</div>
 					))}
 				</div>
