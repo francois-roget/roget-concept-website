@@ -1,8 +1,5 @@
-'use client';
-
 import Image from 'next/image';
 import Link from 'next/link';
-import { useTranslation } from '@/i18n/LanguageProvider';
 
 const content = {
 	en: {
@@ -93,8 +90,12 @@ const content = {
 	},
 };
 
-export default function PrivacyPage() {
-	const { locale } = useTranslation();
+type Props = {
+	params: Promise<{ locale: string }>;
+};
+
+export default async function PrivacyPage({ params }: Props) {
+	const { locale } = await params;
 	const c = content[locale as keyof typeof content] ?? content.en;
 
 	return (

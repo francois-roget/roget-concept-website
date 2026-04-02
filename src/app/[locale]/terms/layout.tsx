@@ -13,23 +13,23 @@ export async function generateMetadata({
 
 	return {
 		title: isFr
-			? 'Politique de confidentialité — Roget Concept'
-			: 'Privacy Policy — Roget Concept',
+			? 'Conditions Générales — Roget Concept'
+			: 'Terms of Service — Roget Concept',
 		description: isFr
-			? 'Politique de confidentialité de Roget Concept SRL. Aucun cookie, aucune donnée personnelle collectée ou stockée.'
-			: 'Privacy policy for Roget Concept SRL. No cookies, no personal data collected or stored.',
+			? 'Conditions générales de prestations de services informatiques de Roget Concept SRL.'
+			: 'Terms and conditions for IT services and technical training by Roget Concept SRL.',
 		alternates: {
-			canonical: `${BASE_URL}/${locale}/privacy`,
+			canonical: `${BASE_URL}/${locale}/terms`,
 			languages: {
-				en: `${BASE_URL}/en/privacy`,
-				fr: `${BASE_URL}/fr/privacy`,
-				'x-default': `${BASE_URL}/en/privacy`,
+				en: `${BASE_URL}/en/terms`,
+				fr: `${BASE_URL}/fr/terms`,
+				'x-default': `${BASE_URL}/en/terms`,
 			},
 		},
 	}
 }
 
-export default async function PrivacyLayout({
+export default async function TermsLayout({
 	children,
 	params,
 }: {
@@ -52,8 +52,8 @@ export default async function PrivacyLayout({
 			{
 				'@type': 'ListItem',
 				position: 2,
-				name: isFr ? 'Politique de confidentialité' : 'Privacy Policy',
-				item: `${BASE_URL}/${locale}/privacy`,
+				name: isFr ? 'Conditions Générales' : 'Terms of Service',
+				item: `${BASE_URL}/${locale}/terms`,
 			},
 		],
 	}
@@ -61,11 +61,11 @@ export default async function PrivacyLayout({
 	const webPage = {
 		'@context': 'https://schema.org',
 		'@type': 'WebPage',
-		'@id': `${BASE_URL}/${locale}/privacy#webpage`,
-		url: `${BASE_URL}/${locale}/privacy`,
+		'@id': `${BASE_URL}/${locale}/terms#webpage`,
+		url: `${BASE_URL}/${locale}/terms`,
 		name: isFr
-			? 'Politique de confidentialité — Roget Concept'
-			: 'Privacy Policy — Roget Concept',
+			? 'Conditions Générales — Roget Concept'
+			: 'Terms of Service — Roget Concept',
 		isPartOf: { '@id': `${BASE_URL}/#website` },
 		inLanguage: locale,
 	}

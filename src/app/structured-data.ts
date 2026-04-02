@@ -23,7 +23,7 @@ export function getStructuredData(locale: 'en' | 'fr') {
 				'@id': `${BASE_URL}/#person`,
 				name: 'François Roget',
 				url: `${BASE_URL}/${locale}`,
-				image: `${BASE_URL}/fro-pro.webp`,
+				image: { '@type': 'ImageObject', url: `${BASE_URL}/fro-pro.webp`, width: 840, height: 1040 },
 				jobTitle: 'Senior Full Stack Developer & Architect',
 				description:
 					'Senior Full Stack Developer and Architect with 20+ years of experience. IT Consultancy, React/TypeScript expertise, and technical training.',
@@ -62,7 +62,7 @@ export function getStructuredData(locale: 'en' | 'fr') {
 				vatID: 'BE1008928573',
 				url: `${BASE_URL}/`,
 				logo: `${BASE_URL}/roget-concept-logo.svg`,
-				image: `${BASE_URL}/fro-pro.webp`,
+				image: { '@type': 'ImageObject', url: `${BASE_URL}/fro-pro.webp`, width: 840, height: 1040 },
 				description:
 					'IT Consultancy and Technical Training by François Roget — Senior Full Stack Developer and Architect with 20+ years of experience.',
 				serviceType: ['IT Consultancy', 'Technical Training', 'Software Architecture'],

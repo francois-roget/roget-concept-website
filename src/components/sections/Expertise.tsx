@@ -110,6 +110,11 @@ export default function Expertise({ t }: Props) {
 					))}
 				</div>
 
+				{/* Education credential */}
+				<p className="text-center text-[12px] text-white/30 tracking-[0.06em] mb-7 -mt-2">
+					🎓 {t.expertise.education}
+				</p>
+
 				{/* Expertise cards */}
 				<div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
 					{expertiseCards.map((card) => (

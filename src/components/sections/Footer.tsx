@@ -44,12 +44,20 @@ export default function Footer({ t, locale }: Props) {
 			<div className="border-t border-white/5">
 				<div className="max-w-[1160px] mx-auto px-6 lg:px-12 py-4 flex items-center justify-between flex-wrap gap-2">
 					<span className="text-xs text-white/20">{t.footer.legal}</span>
-					<a
-						href={`/${locale}/privacy`}
-						className="text-xs text-white/20 hover:text-secondaryLight transition-colors"
-					>
-						{t.footer.privacyPolicy}
-					</a>
+					<div className="flex items-center gap-4">
+						<a
+							href={`/${locale}/privacy`}
+							className="text-xs text-white/20 hover:text-secondaryLight transition-colors"
+						>
+							{t.footer.privacyPolicy}
+						</a>
+						<a
+							href={`/${locale}/terms`}
+							className="text-xs text-white/20 hover:text-secondaryLight transition-colors"
+						>
+							{t.footer.termsOfService}
+						</a>
+					</div>
 				</div>
 			</div>
 		</footer>
