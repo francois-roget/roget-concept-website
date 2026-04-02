@@ -1,3 +1,4 @@
+import { getTranslations } from '@/i18n/getTranslations';
 import Navbar from '@/components/sections/Navbar';
 import Hero from '@/components/sections/Hero';
 import Services from '@/components/sections/Services';
@@ -10,20 +11,27 @@ import AppShowcase from '@/components/sections/AppShowcase';
 import ContactCTA from '@/components/sections/ContactCTA';
 import Footer from '@/components/sections/Footer';
 
-export default function Home() {
+type Props = {
+	params: Promise<{ locale: string }>;
+};
+
+export default async function Home({ params }: Props) {
+	const { locale } = await params;
+	const t = getTranslations(locale);
+
 	return (
 		<>
 			<Navbar />
-			<Hero />
-			<Services />
-			<Expertise />
+			<Hero t={t} />
+			<Services t={t} />
+			<Expertise t={t} />
 			<TechStackBar />
-			<Clients />
-			<Testimonials />
-			<Articles />
-			<AppShowcase />
-			<ContactCTA />
-			<Footer />
+			<Clients t={t} />
+			<Testimonials t={t} />
+			<Articles t={t} />
+			<AppShowcase t={t} />
+			<ContactCTA t={t} />
+			<Footer t={t} locale={locale} />
 		</>
 	);
 }

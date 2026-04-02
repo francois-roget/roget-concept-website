@@ -1,7 +1,5 @@
-'use client';
-
 import Image from 'next/image';
-import { useTranslation } from '@/i18n/LanguageProvider';
+import { type Translations } from '@/i18n/locales/en';
 
 const footerSections = [
 	'services',
@@ -12,9 +10,12 @@ const footerSections = [
 	'contact',
 ] as const;
 
-export default function Footer() {
-	const { t, locale } = useTranslation();
+interface Props {
+	t: Translations;
+	locale: string;
+}
 
+export default function Footer({ t, locale }: Props) {
 	return (
 		<footer className="bg-[#12122e]">
 			<div className="max-w-[1160px] mx-auto px-6 lg:px-12 py-10 flex items-center justify-between flex-wrap gap-4">

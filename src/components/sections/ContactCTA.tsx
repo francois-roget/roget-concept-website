@@ -1,9 +1,7 @@
-'use client';
-
 import { FaLinkedin, FaGithub } from 'react-icons/fa';
 import BrandBackground from '@/components/ui/BrandBackground';
 import ArrowIcon from '@/components/ui/ArrowIcon';
-import { useTranslation } from '@/i18n/LanguageProvider';
+import { type Translations } from '@/i18n/locales/en';
 
 function MailIcon() {
 	return (
@@ -41,9 +39,11 @@ function MapPinIcon() {
 	);
 }
 
-export default function ContactCTA() {
-	const { t } = useTranslation();
+interface Props {
+	t: Translations;
+}
 
+export default function ContactCTA({ t }: Props) {
 	const contactLinks = [
 		{
 			icon: <MailIcon />,

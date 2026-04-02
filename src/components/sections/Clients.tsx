@@ -1,13 +1,13 @@
-'use client';
-
 import Image from 'next/image';
 import SectionHeader from '@/components/ui/SectionHeader';
-import { useTranslation } from '@/i18n/LanguageProvider';
+import { type Translations } from '@/i18n/locales/en';
 import { companies } from '@/data/site-data';
 
-export default function Clients() {
-	const { t } = useTranslation();
+interface Props {
+	t: Translations;
+}
 
+export default function Clients({ t }: Props) {
 	return (
 		<section id="clients" className="py-24 lg:py-28 bg-white">
 			<div className="max-w-[1160px] mx-auto px-6 lg:px-12">

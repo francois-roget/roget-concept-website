@@ -2,7 +2,7 @@
 
 import { useState, useEffect, useRef } from 'react';
 import SectionHeader from '@/components/ui/SectionHeader';
-import { useTranslation } from '@/i18n/LanguageProvider';
+import { type Translations } from '@/i18n/locales/en';
 import { testimonials } from '@/data/site-data';
 
 const GAP = 24;
@@ -13,8 +13,11 @@ const DESKTOP_VISIBLE = 3;
 // Clone first DESKTOP_VISIBLE items at the end for seamless infinite loop
 const extended = [...testimonials, ...testimonials.slice(0, DESKTOP_VISIBLE)];
 
-export default function Testimonials() {
-	const { t } = useTranslation();
+interface Props {
+	t: Translations;
+}
+
+export default function Testimonials({ t }: Props) {
 	const containerRef = useRef<HTMLDivElement>(null);
 	const [currentIndex, setCurrentIndex] = useState(0);
 	const [animated, setAnimated] = useState(true);
