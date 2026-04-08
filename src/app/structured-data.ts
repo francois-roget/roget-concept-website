@@ -167,6 +167,14 @@ export function getStructuredData(locale: 'en' | 'fr') {
 					{
 						'@type': 'ListItem',
 						position: 1,
+						url: 'https://francois-roget.medium.com/how-i-built-a-real-time-live-polling-app-in-a-weekend-with-claude-as-my-co-pilot-9ccb367be677',
+						name: 'How I Built a Real-Time Live Polling App in a Weekend with Claude as My Co-Pilot',
+						author: { '@id': `${BASE_URL}/#person` },
+						datePublished: '2026-04-07',
+					},
+					{
+						'@type': 'ListItem',
+						position: 2,
 						url: 'https://medium.com/@francois-roget/i-built-an-ios-app-without-knowing-swift-heres-what-actually-happened-7e928c38e712',
 						name: "I Built an iOS App Without Knowing Swift — Here's What Actually Happened",
 						author: { '@id': `${BASE_URL}/#person` },
@@ -174,7 +182,7 @@ export function getStructuredData(locale: 'en' | 'fr') {
 					},
 					{
 						'@type': 'ListItem',
-						position: 2,
+						position: 3,
 						url: 'https://medium.com/@francois-roget/my-first-open-source-contribution-5707aebc0408',
 						name: 'My First Open Source Contribution',
 						author: { '@id': `${BASE_URL}/#person` },
@@ -182,7 +190,7 @@ export function getStructuredData(locale: 'en' | 'fr') {
 					},
 					{
 						'@type': 'ListItem',
-						position: 3,
+						position: 4,
 						url: 'https://medium.com/@francois-roget/how-to-conditionally-render-react-ui-based-on-user-permissions-7b9a1c73ffe2',
 						name: 'How to Conditionally Render React UI Based on User Permissions',
 						author: { '@id': `${BASE_URL}/#person` },
@@ -190,7 +198,7 @@ export function getStructuredData(locale: 'en' | 'fr') {
 					},
 					{
 						'@type': 'ListItem',
-						position: 4,
+						position: 5,
 						url: 'https://medium.com/stackademic/accelerate-your-prototypes-development-by-using-a-monorepo-2ecac78e9087',
 						name: 'Accelerate Your Prototypes Development by Using a Monorepo',
 						author: { '@id': `${BASE_URL}/#person` },
@@ -198,7 +206,7 @@ export function getStructuredData(locale: 'en' | 'fr') {
 					},
 					{
 						'@type': 'ListItem',
-						position: 5,
+						position: 6,
 						url: 'https://medium.com/@francois-roget/how-to-build-a-dynamic-micro-frontend-architecture-in-react-95ce548cb775',
 						name: 'How to Build a Dynamic Micro-Frontend Architecture in React',
 						author: { '@id': `${BASE_URL}/#person` },
