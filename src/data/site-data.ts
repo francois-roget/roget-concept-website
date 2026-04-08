@@ -1,5 +1,14 @@
 export const articles = [
 	{
+		title: "How I Built a Real-Time Live Polling App in a Weekend with Claude as My Co-Pilot",
+		url: 'https://francois-roget.medium.com/how-i-built-a-real-time-live-polling-app-in-a-weekend-with-claude-as-my-co-pilot-9ccb367be677',
+		image:
+			'https://miro.medium.com/v2/resize:fit:828/format:webp/1*q0fACapqB_Ug6kHcrZZBXw.png',
+		tags: ['Real-Time', 'Claude'],
+		date: 'April 2026',
+		excerpt: 'A weekend sprint building a real-time live polling app from scratch — with Claude as co-pilot, from architecture decisions to debugging live WebSocket connections.',
+	},
+	{
 		title: "I Built an iOS App Without Knowing Swift — Here's What Actually Happened",
 		url: 'https://medium.com/@francois-roget/i-built-an-ios-app-without-knowing-swift-heres-what-actually-happened-7e928c38e712',
 		image:
