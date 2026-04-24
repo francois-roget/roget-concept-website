@@ -5,10 +5,45 @@ import Image from 'next/image';
 import Link from 'next/link';
 import { useTranslation, type Locale } from '@/i18n/LanguageProvider';
 
-const navSections = ['services', 'expertise', 'clients', 'articles', 'apps'] as const;
+const navSections = ['services', 'expertise', 'clients', 'articles', 'projects'] as const;
+const languages = ['fr', 'en'] as const;
+
+function LanguageSwitcher({
+	onSelect,
+	variant = 'desktop',
+}: {
+	onSelect?: () => void;
+	variant?: 'desktop' | 'mobile';
+}) {
+	const { locale, setLocale } = useTranslation();
+
+	const handleSelect = (lang: Locale) => {
+		setLocale(lang);
+		onSelect?.();
+	};
+
+	const gapClass = variant === 'desktop' ? 'gap-1.5' : 'gap-3';
+	const textClass = variant === 'desktop' ? 'text-[13px]' : 'text-[13px]';
+
+	return (
+		<div className={`flex items-center ${gapClass} ${textClass} font-medium tracking-[0.04em]`}>
+			{languages.map((lang, i) => (
+				<span key={lang} className={`flex items-center ${gapClass}`}>
+					{i > 0 && <span className="text-white/20">|</span>}
+					<button
+						onClick={() => handleSelect(lang as Locale)}
+						className={`min-w-[44px] min-h-[44px] flex items-center justify-center transition-colors uppercase ${locale === lang ? 'text-white' : 'text-white/40 hover:text-white/70'}`}
+					>
+						{lang}
+					</button>
+				</span>
+			))}
+		</div>
+	);
+}
 
 export default function Navbar() {
-	const { t, locale, setLocale } = useTranslation();
+	const { t, locale } = useTranslation();
 	const [isMenuOpen, setIsMenuOpen] = useState(false);
 
 	const closeMenu = () => setIsMenuOpen(false);
@@ -37,22 +72,7 @@ export default function Navbar() {
 						</a>
 					))}
 
-					{/* Language switcher */}
-					<div className="flex items-center gap-1.5 text-[13px] font-medium tracking-[0.04em]">
-						{(['fr', 'en'] as const).map((lang, i) => (
-							<span key={lang} className="flex items-center gap-1.5">
-								{i > 0 && (
-									<span className="text-white/20">|</span>
-								)}
-								<button
-									onClick={() => setLocale(lang as Locale)}
-									className={`min-w-[44px] min-h-[44px] flex items-center justify-center transition-colors uppercase ${locale === lang ? 'text-white' : 'text-white/40 hover:text-white/70'}`}
-								>
-									{lang}
-								</button>
-							</span>
-						))}
-					</div>
+					<LanguageSwitcher variant="desktop" />
 
 					<a
 						href="#contact"
@@ -102,24 +122,8 @@ export default function Navbar() {
 						{t.nav.contact}
 					</a>
 
-					{/* Language switcher */}
-					<div className="mt-5 pt-5 border-t border-white/[0.1] flex items-center justify-center gap-3 text-[13px] font-medium tracking-[0.08em]">
-						{(['fr', 'en'] as const).map((lang, i) => (
-							<span key={lang} className="flex items-center gap-3">
-								{i > 0 && (
-									<span className="text-white/20">|</span>
-								)}
-								<button
-									onClick={() => {
-										setLocale(lang as Locale);
-										closeMenu();
-									}}
-									className={`min-w-[44px] min-h-[44px] flex items-center justify-center transition-colors uppercase ${locale === lang ? 'text-white' : 'text-white/40 hover:text-white/70'}`}
-								>
-									{lang}
-								</button>
-							</span>
-						))}
+					<div className="mt-5 pt-5 border-t border-white/[0.1] flex items-center justify-center">
+						<LanguageSwitcher onSelect={closeMenu} variant="mobile" />
 					</div>
 				</div>
 			)}

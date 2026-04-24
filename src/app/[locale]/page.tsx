@@ -7,7 +7,7 @@ import TechStackBar from '@/components/sections/TechStackBar';
 import Clients from '@/components/sections/Clients';
 import Testimonials from '@/components/sections/Testimonials';
 import Articles from '@/components/sections/Articles';
-import AppShowcase from '@/components/sections/AppShowcase';
+import SideProjects from '@/components/sections/SideProjects';
 import ContactCTA from '@/components/sections/ContactCTA';
 import Footer from '@/components/sections/Footer';
 
@@ -29,7 +29,7 @@ export default async function Home({ params }: Props) {
 			<Clients t={t} />
 			<Testimonials t={t} />
 			<Articles t={t} />
-			<AppShowcase t={t} />
+			<SideProjects t={t} locale={locale} />
 			<ContactCTA t={t} />
 			<Footer t={t} locale={locale} />
 		</>
